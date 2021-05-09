@@ -1,3 +1,35 @@
-body {
-  background-color: red;
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  border: 1px solid silver;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.search {
+  display: grid;
+}
+
+#input-search {
+  height: 30px;
+  width: 200px;
+}
+
+main {
+  display: grid;
+}
+
+footer {
+  height: 100px;
+  width: 100px;
+  border: 1px solid silver;
 }
