@@ -5,18 +5,43 @@
 
 header {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 50% 50%;
   position: fixed;
   height: 60px;
   width: 100%;
-  border: 1px solid silver;
+  background-color: rgb(95, 105, 194);
   align-items: center;
   padding-right: 10px;
   padding-left: 10px;
+  filter: drop-shadow(0px 2px 3px);
 }
 
-.search {
+.logo {
   display: grid;
+  align-items: center;
+  justify-items: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo > a {
+  color: rgb(219, 219, 219);
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  color: white;
+  transition: 500ms;
+}
+
+.menu {
+  display: grid;
+}
+
+.menu > a {
+  color: rgb(219, 219, 219);
+  text-decoration: none;
 }
 
 #input-search {
@@ -26,10 +51,19 @@ header {
 
 main {
   display: grid;
+  height: 100vh;
+  padding: 60px;
 }
 
 footer {
-  height: 100px;
-  width: 100px;
-  border: 1px solid silver;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-items: center;
+  height: 170px;
+  width: 100%;
+  background-color: rgb(48, 47, 47);
+  color: white;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
 }
