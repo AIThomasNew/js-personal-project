@@ -5,7 +5,7 @@
 
 header {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -29,7 +29,7 @@ header {
   text-decoration: none;
 }
 
-a:hover {
+#log:hover {
   cursor: pointer;
   color: white;
   transition: 500ms;
@@ -37,11 +37,17 @@ a:hover {
 
 .menu {
   display: grid;
+  align-items: center;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .menu > a {
   color: #dbdbdb;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 #input-search {
