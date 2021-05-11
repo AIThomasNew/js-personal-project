@@ -3,7 +3,7 @@
   margin: 0px;
 }
 
-header {
+.header-layout {
   display: grid;
   grid-template-columns: 40% 60%;
   position: fixed;
@@ -55,13 +55,13 @@ a:hover {
   width: 200px;
 }
 
-main {
+.main-layout {
   display: grid;
   min-height: 100%;
   padding: 60px;
 }
 
-footer {
+.footer-layout {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
