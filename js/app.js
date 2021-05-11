@@ -1,3 +1,11 @@
-let sayHello = prompt('Как вас зовут?', '');
+// let userName = prompt('Как вас зовут?', '');
 
-alert('Привет тебя ' + sayHello + '!');
+// function ask(userName) {
+//   if (userName == true) {
+//     return alert('Приветствую тебя ' + userName + '!');
+//   } else {
+//     return alert('Ладно, познакомимся позже');
+//   }
+// }
+
+// ask(userName);
