@@ -1,7 +1,23 @@
+// Переменные 
+
+
 * {
   padding: 0px;
   margin: 0px;
 }
+
+// Миксины
+//===============================================================
+
+@mixin proper {
+  cursor: pointer;
+  color: white;
+  transition: 500ms;
+}
+
+// Шапка сайта фиксированная. При скролле страницы остаётся на месте, для удобства пользователя.
+// А также разбита на две части: лого и меню со строкой поиска.
+//===============================================================
 
 header {
   display: grid;
@@ -14,27 +30,31 @@ header {
   padding-right: 10px;
   padding-left: 10px;
   filter: drop-shadow(0px 2px 3px);
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+// Лого сайта
+//===============================================================
 
 .logo {
   display: grid;
   align-items: center;
   justify-items: center;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
-.logo > a {
+#log {
   color: rgb(219, 219, 219);
   text-decoration: none;
 }
 
 #log:hover {
-  cursor: pointer;
-  color: white;
-  transition: 500ms;
+  @include proper;
 }
 
+// Меню сайта
+//===============================================================
+//! Доработать меню и инпут
 .menu {
   display: grid;
   align-items: center;
@@ -55,11 +75,16 @@ a:hover {
   width: 200px;
 }
 
+// Основная информация
+//===============================================================
 main {
   display: grid;
   height: 100vh;
   padding: 60px;
 }
+
+// Подвал
+//===============================================================
 
 footer {
   display: grid;
