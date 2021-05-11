@@ -1,20 +1,18 @@
 * {
   padding: 0px;
   margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header-layout {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 30% 50% 20%;
+  align-items: center;
   position: fixed;
   height: 60px;
   width: 100%;
   background-color: #5f69c2;
-  align-items: center;
-  padding-right: 10px;
-  padding-left: 10px;
   filter: drop-shadow(0px 2px 3px);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -37,8 +35,8 @@
 
 .menu {
   display: grid;
+  grid-template-columns: repeat(7, 110px);
   align-items: center;
-  grid-template-columns: repeat(6, 1fr);
 }
 
 .menu > a {
@@ -47,12 +45,14 @@
 }
 
 a:hover {
-  text-decoration: underline;
+  cursor: pointer;
+  color: white;
+  transition: 500ms;
 }
 
 #input-search {
-  height: 30px;
-  width: 200px;
+  height: 27px;
+  width: 260px;
 }
 
 .main-layout {
@@ -71,5 +71,4 @@ a:hover {
   background-color: #302f2f;
   color: white;
   font-size: 15px;
-  font-family: Arial, Helvetica, sans-serif;
 }
