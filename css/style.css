@@ -133,30 +133,35 @@ a:hover {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
-.modal-window {
+.modal-wrap .modal-window {
   width: 600px;
   border-radius: 5px;
   background: white;
   height: 400px;
   margin: 100px auto;
 }
-
-.modal-header {
+.modal-wrap .modal-header {
   padding: 5px 10px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #e7e7e7;
 }
-
-.modal-title {
+.modal-wrap .modal-title {
   font-size: 1.5rem;
 }
-
-.modal-close {
+.modal-wrap .modal-close {
   cursor: pointer;
 }
-
-.modal-close:hover {
-  color: orange;
+.modal-wrap .modal-close:hover {
+  color: #7aa7eb;
+}
+.modal-wrap .modal-body {
+  padding: 10px;
+}
+.modal-wrap .modal-body p {
+  margin: 0 0 5px;
+}
+.modal-wrap .modal-footer {
+  padding: 5px 10px;
+  border-top: 1px solid #e7e7e7;
 }

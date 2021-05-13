@@ -154,31 +154,41 @@ a:hover {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-}
+  .modal-window {
+    width: 600px;
+    border-radius: 5px;
+    background: white;
+    height: 400px;
+    margin: 100px auto;
+  }
 
-.modal-window {
-  width: 600px;
-  border-radius: 5px;
-  background: white;
-  height: 400px;
-  margin: 100px auto;
-}
+  .modal-header {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(231, 231, 231);
+  }
 
-.modal-header {
-  padding: 5px 10px;
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgb(231, 231, 231);
-}
+  .modal-title {
+    font-size: 1.5rem;
+  }
 
-.modal-title {
-  font-size: 1.5rem;
-}
+  .modal-close {
+    cursor: pointer;
+  }
 
-.modal-close {
-  cursor: pointer;
-}
+  .modal-close:hover {
+    color: rgb(122, 167, 235);
+  }
 
-.modal-close:hover {
-  color: orange;
+  .modal-body {
+    padding: 10px;
+    p {
+      margin: 0 0 5px;
+    }
+  }
+  .modal-footer {
+    padding: 5px 10px;
+    border-top: 1px solid rgb(231, 231, 231);
+  }
 }
