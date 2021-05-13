@@ -147,6 +147,22 @@ a:hover {
 
 // модально окно входа и регистрации
 //===============================================================
+.modal-block.open .modal-wrap,
+.modal-block.open .modal-window {
+  opacity: 1;
+  z-index: 100;
+}
+
+.modal-block.open .modal-window {
+  transform: translateY(100px);
+}
+
+.modal-window,
+.modal-wrap {
+  opacity: 0;
+  z-index: -1;
+}
+
 .modal-wrap {
   position: fixed;
   top: 0;
@@ -159,28 +175,25 @@ a:hover {
     border-radius: 5px;
     background: white;
     height: 400px;
-    margin: 100px auto;
+    margin: 0 auto;
+    transform: translateY(-200px);
+    transition: transform 0.2s ease-in;
   }
-
   .modal-header {
     padding: 5px 10px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid rgb(231, 231, 231);
   }
-
   .modal-title {
     font-size: 1.5rem;
   }
-
   .modal-close {
     cursor: pointer;
   }
-
   .modal-close:hover {
     color: rgb(93, 156, 252);
   }
-
   .modal-body {
     padding: 10px;
     p {

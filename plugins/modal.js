@@ -10,8 +10,10 @@ function _createModal(options) {
       <span class="modal-close">&times</span>
     </div>
     <div class="modal-body">
-      <p>Логин: <input type="text"></p>
-      <p>Пароль: <input type="text"> <input type="checkbox"> </p>
+      <p>Электронная почта</p>
+      <p><input type="text"></p>
+      <p>Пароль</p>
+      <p><input type="text"> <input type="checkbox"></p>
     </div>
     <div class="modal-footer">
       <button>Oк</button>
@@ -20,6 +22,7 @@ function _createModal(options) {
   </div>
 </div>`
   );
+  document.body.appendChild(modal);
   return modal;
 }
 
@@ -27,8 +30,12 @@ $.modal = function (options) {
   const $modal = _createModal(options);
 
   return {
-    open() {},
-    close() {},
+    open() {
+      $modal.classList.add('open');
+    },
+    close() {
+      $modal.classList.remove('open');
+    },
     destroy() {},
   };
 };

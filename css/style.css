@@ -125,6 +125,22 @@ a:hover {
   font-size: 15px;
 }
 
+.modal-block.open .modal-wrap,
+.modal-block.open .modal-window {
+  opacity: 1;
+  z-index: 100;
+}
+
+.modal-block.open .modal-window {
+  transform: translateY(100px);
+}
+
+.modal-window,
+.modal-wrap {
+  opacity: 0;
+  z-index: -1;
+}
+
 .modal-wrap {
   position: fixed;
   top: 0;
@@ -138,7 +154,9 @@ a:hover {
   border-radius: 5px;
   background: white;
   height: 400px;
-  margin: 100px auto;
+  margin: 0 auto;
+  transform: translateY(-200px);
+  transition: transform 0.2s ease-in;
 }
 .modal-wrap .modal-header {
   padding: 5px 10px;
