@@ -1,5 +1,6 @@
-// Переменные
-// $
+// @media screen and (min-width: 992px) and (max-width: 1200px) {
+
+// }
 
 * {
   padding: 0px;
@@ -9,7 +10,6 @@
 
 // Миксины
 //===============================================================
-
 @mixin proper {
   cursor: pointer;
   color: white;
@@ -17,14 +17,10 @@
 }
 
 // Шапка сайта фиксированная.
-// При скролле страницы остаётся на месте, для удобства юзера.
-// А также разбита на две части: лого и меню со строкой поиска.
 //===============================================================
-
 .header-layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 65% 35%;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -33,7 +29,7 @@
   .logo {
     color: white;
     border: 1px solid black;
-    #log {
+    #img-logo {
       color: rgb(219, 219, 219);
       text-decoration: none;
     }
@@ -41,12 +37,54 @@
       @include proper;
     }
   }
+  .logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid red;
+  }
   .menu {
     border: 1px solid black;
   }
+  .log-reg-input {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border: 1px solid red;
+  }
+  .log-reg {
+    margin-left: 20px;
+    #login {
+      margin-left: 10px;
+      border-radius: 5px;
+      border: 1px solid white;
+      height: 27px;
+      width: 60px;
+      background-color: rgb(95, 105, 194);
+      color: white;
+    }
+    #login:hover {
+      cursor: pointer;
+    }
+    #register {
+      margin-left: 10px;
+      border-radius: 5px;
+      border: 1px solid white;
+      height: 27px;
+      width: 110px;
+      background-color: rgb(95, 105, 194);
+    }
+    #register:hover {
+      cursor: pointer;
+    }
+  }
+  button:focus {
+    outline: none;
+  }
   #input-search {
+    margin-left: 40px;
     height: 27px;
-    width: 260px;
+    width: 200px;
     border: 1px solid black;
   }
   a {
@@ -74,16 +112,13 @@ a:hover {
 
 // Подвал
 //===============================================================
-
 .footer-layout {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
   justify-items: center;
-
   height: 170px;
   width: 100%;
-
   background-color: rgb(48, 47, 47);
   color: white;
   font-size: 15px;

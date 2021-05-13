@@ -5,9 +5,8 @@
 }
 
 .header-layout {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 65% 35%;
   position: fixed;
   height: 60px;
   width: 100%;
@@ -18,7 +17,7 @@
   color: white;
   border: 1px solid black;
 }
-.header-layout .logo #log {
+.header-layout .logo #img-logo {
   color: #dbdbdb;
   text-decoration: none;
 }
@@ -27,12 +26,54 @@
   color: white;
   transition: 500ms;
 }
+.header-layout .logo-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 1px solid red;
+}
 .header-layout .menu {
   border: 1px solid black;
 }
-.header-layout #input-search {
+.header-layout .log-reg-input {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  border: 1px solid red;
+}
+.header-layout .log-reg {
+  margin-left: 20px;
+}
+.header-layout .log-reg #login {
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
   height: 27px;
-  width: 260px;
+  width: 60px;
+  background-color: #5f69c2;
+  color: white;
+}
+.header-layout .log-reg #login:hover {
+  cursor: pointer;
+}
+.header-layout .log-reg #register {
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  height: 27px;
+  width: 110px;
+  background-color: #5f69c2;
+}
+.header-layout .log-reg #register:hover {
+  cursor: pointer;
+}
+.header-layout button:focus {
+  outline: none;
+}
+.header-layout #input-search {
+  margin-left: 40px;
+  height: 27px;
+  width: 200px;
   border: 1px solid black;
 }
 .header-layout a {
