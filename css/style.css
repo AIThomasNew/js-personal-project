@@ -13,33 +13,34 @@
   background-color: #5f69c2;
   filter: drop-shadow(0px 2px 3px);
 }
+.header-layout .logo-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .header-layout .logo {
   color: white;
-  border: 1px solid black;
 }
 .header-layout .logo #img-logo {
   color: #dbdbdb;
   text-decoration: none;
 }
-.header-layout .logo #log:hover {
+.header-layout .logo #img-logo:hover {
   cursor: pointer;
   color: white;
   transition: 500ms;
 }
-.header-layout .logo-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  border: 1px solid red;
-}
 .header-layout .menu {
-  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 27px;
+  width: 400px;
 }
 .header-layout .log-reg-input {
   display: flex;
   align-items: center;
   justify-content: start;
-  border: 1px solid red;
 }
 .header-layout .log-reg {
   margin-left: 20px;
@@ -50,11 +51,17 @@
   border: 1px solid white;
   height: 27px;
   width: 60px;
-  background-color: #5f69c2;
+  background-color: transparent;
   color: white;
 }
 .header-layout .log-reg #login:hover {
   cursor: pointer;
+  background-color: white;
+  color: #0a0946;
+}
+.header-layout .log-reg #login:active {
+  background-color: transparent;
+  color: white;
 }
 .header-layout .log-reg #register {
   margin-left: 10px;
@@ -62,10 +69,17 @@
   border: 1px solid white;
   height: 27px;
   width: 110px;
-  background-color: #5f69c2;
+  background-color: transparent;
+  color: white;
 }
 .header-layout .log-reg #register:hover {
   cursor: pointer;
+  background-color: white;
+  color: #0a0946;
+}
+.header-layout .log-reg #register:active {
+  background-color: transparent;
+  color: white;
 }
 .header-layout button:focus {
   outline: none;

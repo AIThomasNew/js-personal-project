@@ -26,31 +26,38 @@
   width: 100%;
   background-color: rgb(95, 105, 194);
   filter: drop-shadow(0px 2px 3px);
+  .logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    // border: 1px solid black;
+  }
+  // можно потом попробовать сделать анимацию при наведении
+  // закругленный бордер и без ховер колор
   .logo {
     color: white;
-    border: 1px solid black;
+    // border: 1px solid black;
     #img-logo {
       color: rgb(219, 219, 219);
       text-decoration: none;
     }
-    #log:hover {
+    #img-logo:hover {
       @include proper;
     }
   }
-  .logo-menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 1px solid red;
-  }
   .menu {
-    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 27px;
+    width: 400px;
+    // border: 1px solid black;
   }
   .log-reg-input {
     display: flex;
     align-items: center;
     justify-content: start;
-    border: 1px solid red;
+    // border: 1px solid red;
   }
   .log-reg {
     margin-left: 20px;
@@ -60,11 +67,17 @@
       border: 1px solid white;
       height: 27px;
       width: 60px;
-      background-color: rgb(95, 105, 194);
+      background-color: transparent;
       color: white;
     }
     #login:hover {
       cursor: pointer;
+      background-color: white;
+      color: rgb(10, 9, 70);
+    }
+    #login:active {
+      background-color: transparent;
+      color: white;
     }
     #register {
       margin-left: 10px;
@@ -72,10 +85,17 @@
       border: 1px solid white;
       height: 27px;
       width: 110px;
-      background-color: rgb(95, 105, 194);
+      background-color: transparent;
+      color: white;
     }
     #register:hover {
       cursor: pointer;
+      background-color: white;
+      color: rgb(10, 9, 70);
+    }
+    #register:active {
+      background-color: transparent;
+      color: white;
     }
   }
   button:focus {
@@ -98,6 +118,14 @@ a:hover {
   @include proper;
 }
 
+
+
+
+
+
+
+
+
 // Основная информация
 //===============================================================
 .main-layout {
@@ -109,6 +137,14 @@ a:hover {
     border: 1px solid black;
   }
 }
+
+
+
+
+
+
+
+
 
 // Подвал
 //===============================================================
