@@ -36,6 +36,7 @@
   align-items: center;
   height: 27px;
   width: 400px;
+  font-size: 19px;
 }
 .header-layout .log-reg-input {
   display: flex;
@@ -122,4 +123,40 @@ a:hover {
   background-color: #302f2f;
   color: white;
   font-size: 15px;
+}
+
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+  width: 600px;
+  border-radius: 5px;
+  background: white;
+  height: 400px;
+  margin: 100px auto;
+}
+
+.modal-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: orange;
 }

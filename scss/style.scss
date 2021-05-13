@@ -51,6 +51,7 @@
     align-items: center;
     height: 27px;
     width: 400px;
+    font-size: 19px;
     // border: 1px solid black;
   }
   .log-reg-input {
@@ -118,14 +119,6 @@ a:hover {
   @include proper;
 }
 
-
-
-
-
-
-
-
-
 // Основная информация
 //===============================================================
 .main-layout {
@@ -137,14 +130,6 @@ a:hover {
     border: 1px solid black;
   }
 }
-
-
-
-
-
-
-
-
 
 // Подвал
 //===============================================================
@@ -158,4 +143,42 @@ a:hover {
   background-color: rgb(48, 47, 47);
   color: white;
   font-size: 15px;
+}
+
+// модально окно входа и регистрации
+//===============================================================
+.modal-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-window {
+  width: 600px;
+  border-radius: 5px;
+  background: white;
+  height: 400px;
+  margin: 100px auto;
+}
+
+.modal-header {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+.modal-close:hover {
+  color: orange;
 }
