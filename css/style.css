@@ -1,7 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .header-layout {
@@ -12,6 +12,7 @@
   width: 100%;
   background-color: #5f69c2;
   filter: drop-shadow(0px 2px 3px);
+  z-index: 10000;
 }
 .header-layout .logo-menu {
   display: flex;
@@ -95,6 +96,7 @@
   color: #dbdbdb;
   text-decoration: none;
   text-align: center;
+  transition: 300ms;
 }
 
 a:hover {
@@ -105,30 +107,50 @@ a:hover {
 
 .main-layout {
   display: grid;
-  grid-template-rows: 700px 700px 700px;
+  grid-template-rows: 600px 600px 600px;
   min-height: 100%;
   padding-top: 60px;
 }
 .main-layout .main-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 50px;
+  grid-column-gap: 30px;
   border: 1px solid #dfdfdf;
+}
+.main-layout .main-content .main-text-photo-car {
+  display: grid;
+  grid-template-rows: 25% 75%;
+  border: 1px solid silver;
+  color: slategrey;
+}
+.main-layout .main-content .main-text-car {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid silver;
 }
 .main-layout .main-content .main-photo-car {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border: 1px solid #dfdfdf;
 }
 .main-layout .main-content .main-photo-car .car {
-  border: 1px solid #dfdfdf;
+  height: 160px;
+  filter: drop-shadow(2px 3px 2px #868686);
+  transition: 300ms;
 }
-.main-layout .main-content .main-photo-car img {
-  height: 150px;
-  border: 1px solid #dfdfdf;
+.main-layout .main-content .main-photo-car .car:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  filter: drop-shadow(8px 5px 7px #636363);
 }
 .main-layout .main-content .main-other {
+  padding-top: 50px;
+  padding-left: 50px;
   border: 1px solid #dfdfdf;
+}
+.main-layout .main-content .main-other h2 {
+  color: slategrey;
 }
 
 .footer-layout {
