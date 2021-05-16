@@ -113,48 +113,62 @@ a:hover {
 }
 .main-layout .main-content-1 {
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: 50% 50%;
   justify-content: center;
   align-items: center;
   background-color: #ebebeb;
-  border: 1px solid silver;
 }
 .main-layout .main-content-1 .auto-call-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid silver;
+  height: 336px;
 }
 .main-layout .main-content-1 .auto-call-form .auto-call {
   display: grid;
-  grid-template-rows: 70% 30%;
-  border: 1px solid silver;
+  grid-row-gap: 14px;
 }
 .main-layout .main-content-1 .order-form {
-  width: 300px;
-  height: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 512px;
+  height: 250px;
   border-radius: 10px;
   background-color: white;
-  border: 1px solid silver;
+  transition: 300ms;
+  filter: drop-shadow(1px 1px 1px #adadad);
+}
+.main-layout .main-content-1 .order-form .input-order {
+  height: 23px;
+}
+.main-layout .main-content-1 .order-form-text {
+  padding-top: 12px;
 }
 .main-layout .main-content-1 .order {
-  width: 300px;
-  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 512px;
+  height: 70px;
   background-color: white;
   border-radius: 10px;
-  border: 1px solid silver;
+  filter: drop-shadow(1px 1px 1px #adadad);
+}
+.main-layout .main-content-1 .order-form:hover {
+  background-color: #5f69c2;
+  color: #dbdbdb;
+  filter: drop-shadow(6px 3px 5px #adadad);
 }
 .main-layout .main-content-1 .main-photo-car {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid silver;
 }
 .main-layout .main-content-1 .main-photo-car .photo-car {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 16px;
-  border: 1px solid silver;
 }
 .main-layout .main-content-1 .main-photo-car .car {
   height: 160px;
@@ -164,7 +178,7 @@ a:hover {
 .main-layout .main-content-1 .main-photo-car .car:hover {
   cursor: pointer;
   transform: scale(1.05);
-  filter: drop-shadow(8px 5px 7px #636363);
+  filter: drop-shadow(6px 3px 5px #adadad);
 }
 
 .footer-layout {

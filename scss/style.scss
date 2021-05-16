@@ -131,48 +131,60 @@ a:hover {
 
   .main-content-1 {
     display: grid;
-    grid-template-columns: 55% 45%;
+    grid-template-columns: 50% 50%;
     justify-content: center;
     align-items: center;
     background-color: rgb(235, 235, 235);
-    border: 1px solid silver;
     .auto-call-form {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid silver;
+      height: 160px + 16px + 160px;
       .auto-call {
         display: grid;
-        grid-template-rows: 70% 30%;
-        // grid-row-gap: 8px;
-        border: 1px solid silver;
+        grid-row-gap: 14px;
       }
     }
     .order-form {
-      width: 300px;
-      height: 210px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px + 160px + 160px + 16px + 16px;
+      height: 250px;
       border-radius: 10px;
       background-color: white;
-      border: 1px solid silver;
+      transition: 300ms;
+      filter: drop-shadow(1px 1px 1px rgb(173, 173, 173));
+      .input-order {
+        height: 23px;
+      }
+    }
+    .order-form-text {
+      padding-top: 12px;
     }
     .order {
-      width: 300px;
-      height: 110px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 160px + 160px + 160px + 16px + 16px;
+      height: 70px;
       background-color: white;
       border-radius: 10px;
-      border: 1px solid silver;
+      filter: drop-shadow(1px 1px 1px rgb(173, 173, 173));
+    }
+    .order-form:hover {
+      background-color: rgb(95, 105, 194);
+      color: rgb(219, 219, 219);
+      filter: drop-shadow(6px 3px 5px rgb(173, 173, 173));
     }
     .main-photo-car {
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid silver;
-
       .photo-car {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 16px;
-        border: 1px solid silver;
       }
       .car {
         height: 160px;
@@ -182,7 +194,7 @@ a:hover {
       .car:hover {
         cursor: pointer;
         transform: scale(1.05);
-        filter: drop-shadow(8px 5px 7px rgb(99, 99, 99));
+        filter: drop-shadow(6px 3px 5px rgb(173, 173, 173));
       }
     }
   }
