@@ -10,11 +10,6 @@
 
 // Миксины
 //===============================================================
-@mixin proper {
-  cursor: pointer;
-  color: white;
-  transition: 500ms;
-}
 
 // Шапка сайта фиксированная.
 //===============================================================
@@ -39,11 +34,12 @@
     color: white;
     // border: 1px solid black;
     #img-logo {
-      color: rgb(219, 219, 219);
+      color: white;
       text-decoration: none;
     }
     #img-logo:hover {
-      @include proper;
+      cursor: pointer;
+      // transition: 500ms;
     }
   }
   .menu {
@@ -110,7 +106,7 @@
     border: 1px solid black;
   }
   a {
-    color: rgb(219, 219, 219);
+    color: white;
     text-decoration: none;
     text-align: center;
     transition: 300ms;
@@ -118,7 +114,9 @@
 }
 
 a:hover {
-  @include proper;
+  cursor: pointer;
+  // color: white;
+  // transition: 500ms;
 }
 
 // Основная информация
@@ -275,5 +273,20 @@ a:hover {
   .modal-footer {
     padding: 5px 10px;
     border-top: 1px solid rgb(231, 231, 231);
+  }
+}
+
+//======================================================
+// Блок Условия
+
+.conditions {
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 35px;
+  margin-left: 120px;
+  margin-right: 120px;
+  border: 1px solid silver;
+  li {
+    list-style:inside;
   }
 }

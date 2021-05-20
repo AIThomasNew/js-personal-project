@@ -23,13 +23,11 @@
   color: white;
 }
 .header-layout .logo #img-logo {
-  color: #dbdbdb;
+  color: white;
   text-decoration: none;
 }
 .header-layout .logo #img-logo:hover {
   cursor: pointer;
-  color: white;
-  transition: 500ms;
 }
 .header-layout .menu {
   display: flex;
@@ -93,7 +91,7 @@
   border: 1px solid black;
 }
 .header-layout a {
-  color: #dbdbdb;
+  color: white;
   text-decoration: none;
   text-align: center;
   transition: 300ms;
@@ -101,8 +99,6 @@
 
 a:hover {
   cursor: pointer;
-  color: white;
-  transition: 500ms;
 }
 
 .main-layout {
@@ -244,4 +240,16 @@ a:hover {
 .modal-wrap .modal-footer {
   padding: 5px 10px;
   border-top: 1px solid #e7e7e7;
+}
+
+.conditions {
+  display: grid;
+  grid-template-rows: auto;
+  margin-top: 35px;
+  margin-left: 120px;
+  margin-right: 120px;
+  border: 1px solid silver;
+}
+.conditions li {
+  list-style: inside;
 }
