@@ -242,14 +242,36 @@ a:hover {
   border-top: 1px solid #e7e7e7;
 }
 
-.conditions {
-  display: grid;
-  grid-template-rows: auto;
-  margin-top: 35px;
+.main-conditions {
+  min-height: 100%;
+  padding-top: 60px;
+  margin-bottom: 35px;
   margin-left: 120px;
   margin-right: 120px;
   border: 1px solid silver;
 }
+
+.conditions {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 40px;
+  margin-top: 35px;
+  border: 1px solid silver;
+}
+.conditions .cond {
+  border: 1px solid silver;
+}
 .conditions li {
   list-style: inside;
+}
+
+.car-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.car-select #car-btn {
+  width: 200px;
+  height: 40px;
+  border-radius: 8px;
 }
