@@ -1,9 +1,15 @@
 const modal = $.modal();
 
-const btn = document.querySelector('#login');
-btn.addEventListener('click', fn);
+const login = document.querySelector('#login');
+login.addEventListener('click', fn);
 
 function fn() {
   return modal.open();
 }
 
+const modalClose = document.querySelector('.modal-close');
+modalClose.addEventListener('click', foo);
+
+function foo() {
+  return modal.close();
+}

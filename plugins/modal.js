@@ -6,7 +6,7 @@ function _createModal(options) {
     `<div class="modal-wrap">
   <div class="modal-window">
     <div class="modal-header">
-      <span class="modal-title">Регистрация</span>
+      <span class="modal-title">Вход</span>
       <span class="modal-close">&times</span>
     </div>
     <div class="modal-body">
@@ -39,5 +39,3 @@ $.modal = function (options) {
     destroy() {},
   };
 };
-
-
