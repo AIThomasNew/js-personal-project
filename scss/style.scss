@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: 65% 35%;
   position: fixed;
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-color: rgb(95, 105, 194);
   filter: drop-shadow(0px 2px 3px);
@@ -31,15 +31,42 @@
   // можно потом попробовать сделать анимацию при наведении
   // закругленный бордер и без ховер колор
   .logo {
-    color: white;
-    // border: 1px solid black;
-    #img-logo {
+    // border: 1px solid silver; 
+    #btn-logo {
       color: white;
       text-decoration: none;
+      background-color: rgb(95, 105, 194);
+      color: white;
+      border: 1px solid white;
+      border-radius: 25px;
+      font-size: 25px;
+      font-weight: 550;
+      width: 200px;
+      height: 50px;
+      transition: all ease 500ms;
+      // animation-duration: 5s;
+      animation-name: animLogo;
+      animation-iteration-count: 1;
     }
-    #img-logo:hover {
+    #btn-logo:hover {
       cursor: pointer;
-      // transition: 500ms;
+      color: rgb(95, 105, 194);
+      background-color: white;
+      animation-play-state: running;
+    }
+    @keyframes animLogo {
+      from {
+        transform: translate(0px, 0px);
+        // transition: 300ms;
+      }
+      50% {
+        transform: translate(0px, -7px);
+        transition: 300ms;
+      }
+      to {
+        transform: translate(0px, 0px);
+        transition: 100ms;
+      }
     }
   }
   .menu {
@@ -71,7 +98,7 @@
     #login:hover {
       cursor: pointer;
       background-color: white;
-      color: rgb(10, 9, 70);
+      color: rgb(95, 105, 194);
     }
     #login:active {
       background-color: transparent;
@@ -89,7 +116,7 @@
     #register:hover {
       cursor: pointer;
       background-color: white;
-      color: rgb(10, 9, 70);
+      color: rgb(95, 105, 194);
     }
     #register:active {
       background-color: transparent;

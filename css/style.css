@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: 65% 35%;
   position: fixed;
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-color: #5f69c2;
   filter: drop-shadow(0px 2px 3px);
@@ -19,15 +19,39 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.header-layout .logo {
-  color: white;
-}
-.header-layout .logo #img-logo {
+.header-layout .logo #btn-logo {
   color: white;
   text-decoration: none;
+  background-color: #5f69c2;
+  color: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  font-size: 25px;
+  font-weight: 550;
+  width: 200px;
+  height: 50px;
+  transition: all ease 500ms;
+  animation-name: animLogo;
+  animation-iteration-count: 1;
 }
-.header-layout .logo #img-logo:hover {
+.header-layout .logo #btn-logo:hover {
   cursor: pointer;
+  color: #5f69c2;
+  background-color: white;
+  animation-play-state: running;
+}
+@keyframes animLogo {
+  from {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -7px);
+    transition: 300ms;
+  }
+  to {
+    transform: translate(0px, 0px);
+    transition: 100ms;
+  }
 }
 .header-layout .menu {
   display: flex;
@@ -57,7 +81,7 @@
 .header-layout .log-reg #login:hover {
   cursor: pointer;
   background-color: white;
-  color: #0a0946;
+  color: #5f69c2;
 }
 .header-layout .log-reg #login:active {
   background-color: transparent;
@@ -75,7 +99,7 @@
 .header-layout .log-reg #register:hover {
   cursor: pointer;
   background-color: white;
-  color: #0a0946;
+  color: #5f69c2;
 }
 .header-layout .log-reg #register:active {
   background-color: transparent;
