@@ -44,9 +44,9 @@
       width: 200px;
       height: 50px;
       transition: all ease 500ms;
-      // animation-duration: 5s;
+      animation-duration: 5s;
       animation-name: animLogo;
-      animation-iteration-count: 1;
+      animation-iteration-count: infinite;
     }
     #btn-logo:hover {
       cursor: pointer;
@@ -54,16 +54,25 @@
       background-color: white;
       animation-play-state: running;
     }
+    // #btn-logo:hover::before {
+      
+    // }
+    // #btn-logo:hover::after {}
+
     @keyframes animLogo {
-      from {
+      0% {
         transform: translate(0px, 0px);
-        // transition: 300ms;
+        transition: 100ms;
       }
-      50% {
+      30% {
         transform: translate(0px, -7px);
         transition: 300ms;
       }
-      to {
+      60% {
+        transform: translate(0px, 7px);
+        transition: 100ms;
+      }
+      100% {
         transform: translate(0px, 0px);
         transition: 100ms;
       }
