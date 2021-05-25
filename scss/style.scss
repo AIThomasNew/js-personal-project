@@ -14,13 +14,13 @@
 // Шапка сайта фиксированная.
 //===============================================================
 .header-layout {
-  display: grid;
-  grid-template-columns: 65% 35%;
+  display: flex;
+  justify-content: space-around;
   position: fixed;
   height: 80px;
   width: 100%;
   background-color: rgb(95, 105, 194);
-  filter: drop-shadow(0px 2px 3px);
+  filter: drop-shadow(0px 1px 3px);
   z-index: 10000;
   .logo-menu {
     display: flex;
@@ -78,9 +78,9 @@
     margin-left: 20px;
     #login {
       margin-left: 10px;
-      border-radius: 5px;
+      border-radius: 12px;
       border: 1px solid white;
-      height: 27px;
+      height: 35px;
       width: 60px;
       background-color: transparent;
       color: white;
@@ -96,9 +96,9 @@
     }
     #register {
       margin-left: 10px;
-      border-radius: 5px;
+      border-radius: 12px;
       border: 1px solid white;
-      height: 27px;
+      height: 35px;
       width: 110px;
       background-color: transparent;
       color: white;
@@ -124,7 +124,7 @@
     border-radius: 50%;
   }
   a {
-    color: white;
+    color: rgb(201, 201, 201);
     text-decoration: none;
     text-align: center;
     transition: 300ms;
@@ -133,8 +133,8 @@
 
 a:hover {
   cursor: pointer;
-  // color: white;
-  // transition: 500ms;
+  color: white;
+  transition: 500ms;
 }
 
 // Основная информация
