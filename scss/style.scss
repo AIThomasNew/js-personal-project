@@ -309,12 +309,21 @@ a:hover {
 .conditions {
   display: grid;
   grid-template-rows: auto;
+  justify-content: center;
   grid-row-gap: 40px;
-  margin-top: 35px;
+  margin-top: 65px;
   border: 1px solid silver;
   .cond {
-    border: 1px solid silver;
-    //! все блоки анимационные с фишкой (читать далее) откр.  <<<<
+    border-radius: 15px;
+    padding: 10px;
+    color: rgb(239, 239, 243);
+    background-color: rgb(32, 36, 77);
+    width: 800px;
+    transition: all ease 300ms;
+  }
+  .cond:hover {
+    filter: drop-shadow(5px 6px 4px rgb(66, 66, 66));
+    transition: 200ms;
   }
   li {
     list-style: inside;
@@ -325,6 +334,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
   #car-btn {
     width: 200px;
     height: 40px;

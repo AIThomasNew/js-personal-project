@@ -274,12 +274,22 @@ a:hover {
 .conditions {
   display: grid;
   grid-template-rows: auto;
+  justify-content: center;
   grid-row-gap: 40px;
-  margin-top: 35px;
+  margin-top: 65px;
   border: 1px solid silver;
 }
 .conditions .cond {
-  border: 1px solid silver;
+  border-radius: 15px;
+  padding: 10px;
+  color: #efeff3;
+  background-color: #20244d;
+  width: 800px;
+  transition: all ease 300ms;
+}
+.conditions .cond:hover {
+  filter: drop-shadow(5px 6px 4px #424242);
+  transition: 200ms;
 }
 .conditions li {
   list-style: inside;
@@ -289,6 +299,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100px;
 }
 .car-select #car-btn {
   width: 200px;
