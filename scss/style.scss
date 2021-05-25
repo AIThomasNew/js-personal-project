@@ -42,17 +42,6 @@
       width: 200px;
       height: 50px;
       transition: all ease 100ms;
-      @keyframes animate1 {
-        0% {
-          left: -100%;
-        }
-        50% {
-          left: 100%;
-        }
-        100% {
-          left: 100%;
-        }
-      }
       // animation-name: animLogo;
       // animation-duration: 5s;
       // animation-iteration-count: infinite;
@@ -69,19 +58,6 @@
       box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
       transition: 30ms;
     }
-  }
-  #btn-logo > .anim-line {
-    position: absolute;
-    display: block;
-  }
-  .anim-line:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, white);
-    animation: animate1 1s linear infinite;
-    overflow: hidden;
   }
   .menu {
     display: flex;
