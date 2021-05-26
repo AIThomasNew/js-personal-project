@@ -19,7 +19,7 @@
   position: fixed;
   height: 80px;
   width: 100%;
-  background-color: rgb(95, 105, 194);
+  background-color: rgb(62, 68, 126);
   filter: drop-shadow(0px 1px 3px);
   z-index: 10000;
   .logo-menu {
@@ -33,7 +33,7 @@
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      background-color: rgb(95, 105, 194);
+      background-color: rgb(62, 68, 126);
       color: white;
       border: 2px solid rgb(201, 201, 201);
       border-radius: 25px;
@@ -48,7 +48,7 @@
     }
     #btn-logo:hover {
       cursor: pointer;
-      color: rgb(95, 105, 194);
+      color: rgb(62, 68, 126);
       background-color: white;
       border: 2px solid white;
       transform: translate(0px, -5px);
@@ -88,7 +88,7 @@
     #login:hover {
       cursor: pointer;
       background-color: white;
-      color: rgb(95, 105, 194);
+      color: rgb(62, 68, 126);
     }
     #login:active {
       background-color: transparent;
@@ -106,7 +106,7 @@
     #register:hover {
       cursor: pointer;
       background-color: white;
-      color: rgb(95, 105, 194);
+      color: rgb(62, 68, 126);
     }
     #register:active {
       background-color: transparent;
@@ -124,16 +124,16 @@
     border-radius: 50%;
   }
   a {
-    color: rgb(201, 201, 201);
+    color: white;
     text-decoration: none;
     text-align: center;
-    transition: 300ms;
+    transition: 100ms;
   }
 }
 
 a:hover {
   cursor: pointer;
-  color: white;
+  color: rgb(173, 173, 173);
   transition: 500ms;
 }
 
@@ -144,7 +144,6 @@ a:hover {
   grid-template-rows: 500px 500px;
   min-height: 100%;
   padding-top: 60px;
-
   .main-content-1 {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -303,7 +302,7 @@ a:hover {
   margin-bottom: 35px;
   margin-left: 120px;
   margin-right: 120px;
-  border: 1px solid silver;
+  // border: 1px solid silver;
 }
 
 .conditions {
@@ -312,12 +311,12 @@ a:hover {
   justify-content: center;
   grid-row-gap: 40px;
   margin-top: 65px;
-  border: 1px solid silver;
+  // border: 1px solid silver;
   .cond {
     border-radius: 15px;
     padding: 10px;
-    color: rgb(239, 239, 243);
-    background-color: rgb(32, 36, 77);
+    color: rgb(20, 20, 31);
+    background-color: rgb(230, 161, 59);
     width: 800px;
     transition: all ease 300ms;
   }

@@ -10,7 +10,7 @@
   position: fixed;
   height: 80px;
   width: 100%;
-  background-color: #5f69c2;
+  background-color: #3e447e;
   filter: drop-shadow(0px 1px 3px);
   z-index: 10000;
 }
@@ -24,7 +24,7 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: #5f69c2;
+  background-color: #3e447e;
   color: white;
   border: 2px solid #c9c9c9;
   border-radius: 25px;
@@ -36,7 +36,7 @@
 }
 .header-layout .logo #btn-logo:hover {
   cursor: pointer;
-  color: #5f69c2;
+  color: #3e447e;
   background-color: white;
   border: 2px solid white;
   transform: translate(0px, -5px);
@@ -74,7 +74,7 @@
 .header-layout .log-reg #login:hover {
   cursor: pointer;
   background-color: white;
-  color: #5f69c2;
+  color: #3e447e;
 }
 .header-layout .log-reg #login:active {
   background-color: transparent;
@@ -92,7 +92,7 @@
 .header-layout .log-reg #register:hover {
   cursor: pointer;
   background-color: white;
-  color: #5f69c2;
+  color: #3e447e;
 }
 .header-layout .log-reg #register:active {
   background-color: transparent;
@@ -109,15 +109,15 @@
   border-radius: 50%;
 }
 .header-layout a {
-  color: #c9c9c9;
+  color: white;
   text-decoration: none;
   text-align: center;
-  transition: 300ms;
+  transition: 100ms;
 }
 
 a:hover {
   cursor: pointer;
-  color: white;
+  color: #adadad;
   transition: 500ms;
 }
 
@@ -268,7 +268,6 @@ a:hover {
   margin-bottom: 35px;
   margin-left: 120px;
   margin-right: 120px;
-  border: 1px solid silver;
 }
 
 .conditions {
@@ -277,13 +276,12 @@ a:hover {
   justify-content: center;
   grid-row-gap: 40px;
   margin-top: 65px;
-  border: 1px solid silver;
 }
 .conditions .cond {
   border-radius: 15px;
   padding: 10px;
-  color: #efeff3;
-  background-color: #20244d;
+  color: #14141f;
+  background-color: #e6a13b;
   width: 800px;
   transition: all ease 300ms;
 }
