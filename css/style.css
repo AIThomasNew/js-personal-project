@@ -143,52 +143,6 @@ a:hover {
   display: grid;
   grid-row-gap: 14px;
 }
-.main-layout .main-content-1 .order-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 512px;
-  height: 250px;
-  border-radius: 10px;
-  background-color: white;
-  filter: drop-shadow(1px 1px 1px #adadad);
-}
-.main-layout .main-content-1 .order-form .input-order {
-  height: 23px;
-}
-.main-layout .main-content-1 .order-form-text {
-  padding-top: 12px;
-}
-.main-layout .main-content-1 .order {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 512px;
-  height: 70px;
-  background-color: white;
-  border-radius: 10px;
-  filter: drop-shadow(1px 1px 1px #adadad);
-}
-.main-layout .main-content-1 .main-photo-car {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-layout .main-content-1 .main-photo-car .photo-car {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 16px;
-}
-.main-layout .main-content-1 .main-photo-car .car {
-  height: 160px;
-  filter: drop-shadow(1px 1px 1px #adadad);
-  transition: 300ms;
-}
-.main-layout .main-content-1 .main-photo-car .car:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  filter: drop-shadow(6px 3px 5px #adadad);
-}
 
 .footer-layout {
   display: grid;
@@ -259,47 +213,4 @@ a:hover {
 .modal-wrap .modal-footer {
   padding: 5px 10px;
   border-top: 1px solid #e7e7e7;
-}
-
-.main-conditions {
-  min-height: 100%;
-  padding-top: 60px;
-  margin-bottom: 35px;
-  margin-left: 120px;
-  margin-right: 120px;
-}
-
-.conditions {
-  display: grid;
-  grid-template-rows: auto;
-  justify-content: center;
-  grid-row-gap: 40px;
-  margin-top: 65px;
-}
-.conditions .cond {
-  border-radius: 15px;
-  padding: 10px;
-  color: #14141f;
-  background-color: #e6a13b;
-  width: 800px;
-  transition: all ease 300ms;
-}
-.conditions .cond:hover {
-  filter: drop-shadow(5px 6px 4px #424242);
-  transition: 200ms;
-}
-.conditions li {
-  list-style: inside;
-}
-
-.car-select {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-.car-select #car-btn {
-  width: 200px;
-  height: 40px;
-  border-radius: 8px;
 }

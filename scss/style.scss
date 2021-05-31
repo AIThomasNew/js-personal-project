@@ -159,62 +159,7 @@ a:hover {
         grid-row-gap: 14px;
       }
     }
-    .order-form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 160px + 160px + 160px + 16px + 16px;
-      height: 250px;
-      border-radius: 10px;
-      background-color: white;
-      // transition: 300ms;
-      filter: drop-shadow(1px 1px 1px rgb(173, 173, 173));
-      .input-order {
-        height: 23px;
-      }
-    }
-    .order-form-text {
-      padding-top: 12px;
-    }
-    .order {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 160px + 160px + 160px + 16px + 16px;
-      height: 70px;
-      background-color: white;
-      border-radius: 10px;
-      filter: drop-shadow(1px 1px 1px rgb(173, 173, 173));
-    }
-    // .order-form:hover {
-    //   background-color: rgb(95, 105, 194);
-    //   color: rgb(219, 219, 219);
-    //   filter: drop-shadow(6px 3px 5px rgb(173, 173, 173));
-    // }
-    .main-photo-car {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .photo-car {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 16px;
-      }
-      .car {
-        height: 160px;
-        filter: drop-shadow(1px 1px 1px rgb(173, 173, 173));
-        transition: 300ms;
-      }
-      .car:hover {
-        cursor: pointer;
-        transform: scale(1.05);
-        filter: drop-shadow(6px 3px 5px rgb(173, 173, 173));
-      }
-    }
   }
-  // .main-content-2 {
-
-  // }
 }
 
 // Подвал
@@ -289,53 +234,5 @@ a:hover {
   .modal-footer {
     padding: 5px 10px;
     border-top: 1px solid rgb(231, 231, 231);
-  }
-}
-
-//======================================================
-// Блок Условия
-
-.main-conditions {
-  min-height: 100%;
-  padding-top: 60px;
-  margin-bottom: 35px;
-  margin-left: 120px;
-  margin-right: 120px;
-  // border: 1px solid silver;
-}
-
-.conditions {
-  display: grid;
-  grid-template-rows: auto;
-  justify-content: center;
-  grid-row-gap: 40px;
-  margin-top: 65px;
-  // border: 1px solid silver;
-  .cond {
-    border-radius: 15px;
-    padding: 10px;
-    color: rgb(20, 20, 31);
-    background-color: rgb(230, 161, 59);
-    width: 800px;
-    transition: all ease 300ms;
-  }
-  .cond:hover {
-    filter: drop-shadow(5px 6px 4px rgb(66, 66, 66));
-    transition: 200ms;
-  }
-  li {
-    list-style: inside;
-  }
-}
-
-.car-select {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  #car-btn {
-    width: 200px;
-    height: 40px;
-    border-radius: 8px;
   }
 }
