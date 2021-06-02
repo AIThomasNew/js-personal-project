@@ -1,0 +1,74 @@
+.header-layout {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  background-color: rgb(62, 68, 126);
+  filter: drop-shadow(1px 1px 3px);
+  z-index: 10000;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  #btn-logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(62, 68, 126);
+    color: white;
+    border: 2px solid rgb(201, 201, 201);
+    border-radius: 25px;
+    font-size: 25px;
+    font-weight: 550;
+    width: 220px;
+    height: 50px;
+    transition: all ease 100ms;
+    // animation-name: animLogo;
+    // animation-duration: 5s;
+    // animation-iteration-count: infinite;
+  }
+  #btn-logo:hover {
+    cursor: pointer;
+    color: rgb(62, 68, 126);
+    background-color: white;
+    border: 2px solid white;
+    transform: translate(0px, -5px);
+    transition: 200ms;
+  }
+  #btn-logo:active {
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
+    transition: 30ms;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 27px;
+  width: 400px;
+  font-size: 19px;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  transition: 100ms;
+}
+
+a:hover {
+  cursor: pointer;
+  color: rgb(173, 173, 173);
+  transition: 500ms;
+}

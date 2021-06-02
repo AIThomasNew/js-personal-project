@@ -1,0 +1,16 @@
+.main-layout {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  min-height: 100%;
+  border: 2px solid red;
+}
+
+.feedback {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+.feedback .fb-box {
+  border: 1px solid silver;
+  width: 150px;
+}

@@ -1,0 +1,11 @@
+.footer-layout {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  justify-items: center;
+  // height: 170px;
+  width: 100%;
+  background-color: rgb(48, 47, 47);
+  color: white;
+  font-size: 15px;
+}

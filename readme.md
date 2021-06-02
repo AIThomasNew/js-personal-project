@@ -1,3 +1,3 @@
-# Fast Car Rent
+# Thomas Code
 
 Я использую FlexBox и Grid в связке. Адаптивность - @media запросы. SASS - Вложенные стили, миксины и инклюды. JavaScript.
