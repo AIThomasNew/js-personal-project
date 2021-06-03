@@ -4,7 +4,7 @@
   position: fixed;
   height: 80px;
   width: 100%;
-  background: linear-gradient(-160deg, #142272, #2d3b8f, #9966cc, rgb(212, 145, 69));
+  background: linear-gradient(-90deg, #142272, #9966cc);
   filter: drop-shadow(1px 1px 3px);
   z-index: 10000;
 }
@@ -18,7 +18,7 @@
   align-items: center;
   width: 100%;
   .nav {
-    width: 600px;
+    width: 650px;
   }
 }
 
@@ -35,6 +35,7 @@
     text-decoration: none;
     background-color: transparent;
     color: white;
+    box-sizing: border-box;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -48,8 +49,8 @@
   #btn-logo:hover {
     cursor: pointer;
     color: #142272;
-    background-color: white;
-    border: 2px solid white;
+    background: white;
+    border: 1px solid white;
     transform: translate(0px, -5px);
     transition: 200ms;
   }
@@ -74,15 +75,15 @@ button:focus {
   outline: none;
 }
 
-a {
-  color: white;
+.nav-links {
+  color: rgb(211, 211, 211);
   text-decoration: none;
   text-align: center;
   transition: 100ms;
 }
 
-a:hover {
+.nav-links:hover {
   cursor: pointer;
-  color: darken(white, 20%);
+  color: lighten($color: white, $amount: 100%);
   transition: 500ms;
 }

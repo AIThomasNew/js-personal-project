@@ -1,11 +1,11 @@
 .footer-layout {
   display: grid;
-  grid-template-columns: 30% 70%;
+  grid-template-columns: 25% 25% 25% 25%;
   align-items: center;
   justify-items: center;
   // height: 170px;
   width: 100%;
-  background-color: rgb(48, 47, 47);
+  background: linear-gradient(-40deg, #0e1a61, #142272, #9966cc);
   color: white;
   font-family: 'Commissioner', sans-serif;
   font-size: 19px;
