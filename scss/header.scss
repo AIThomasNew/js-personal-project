@@ -1,4 +1,4 @@
-.header-layout {
+.head {
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -29,6 +29,7 @@
     width: 220px;
     height: 50px;
     transition: all ease 100ms;
+    margin-right: 30px;
     // animation-name: animLogo;
     // animation-duration: 5s;
     // animation-iteration-count: infinite;
@@ -69,6 +70,6 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: rgb(173, 173, 173);
+  color: rgb(196, 196, 196);
   transition: 500ms;
 }

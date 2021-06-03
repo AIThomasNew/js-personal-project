@@ -1,16 +1,66 @@
 .main-layout {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 450px 450px;
+  margin-top: 80px;
   min-height: 100%;
   border: 2px solid red;
 }
 
-.feedback {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 20px;
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: silver;
 }
-.feedback .fb-box {
+
+.swiper-slide {
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  padding: 15px 25px 30px 25px;
+  font-size: 13px;
+  color: #8a8a8a;
   border: 1px solid silver;
-  width: 150px;
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  width: 190px;
+  height: 270px;
+  background-color: white;
+}
+
+.fb-text {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+
+.client-name {
+  font-weight: 500;
+  color: #00aeff;
+}
+
+.client-prof {
+  color: #afafaf;
+}
+
+.swiper-slide .fb-text .client-photo {
+  position: relative;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid silver;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.swiper-slide .fb-text .client-photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

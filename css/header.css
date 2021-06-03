@@ -1,4 +1,4 @@
-.header-layout {
+.head {
   display: flex;
   justify-content: space-around;
   position: fixed;
@@ -28,6 +28,7 @@
   width: 220px;
   height: 50px;
   transition: all ease 100ms;
+  margin-right: 30px;
 }
 .logo #btn-logo:hover {
   cursor: pointer;
@@ -64,6 +65,6 @@ a {
 
 a:hover {
   cursor: pointer;
-  color: #adadad;
+  color: #c4c4c4;
   transition: 500ms;
 }
