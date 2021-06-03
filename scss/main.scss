@@ -30,6 +30,10 @@
   filter: blur(4px);
 }
 
+.swiper-slide-active {
+  filter: blur(0px);
+}
+
 .fb-text {
   display: flex;
   align-items: center;
