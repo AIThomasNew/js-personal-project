@@ -1,7 +1,6 @@
 .main-layout {
   display: grid;
-  // grid-template-rows: 740px 740px 740px 740px 450px;
-  grid-template-rows: 2fr 2fr 2fr 2fr 450px 300px;
+  grid-template-rows: 100px 100px 100px 740px 450px 500px;
   margin-top: 80px;
   min-height: 100%;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -31,11 +30,7 @@
 //===================services===================
 
 .services {
-  border: 1px solid pink;
-}
-
-.color {
-  position: absolute;
+  border: 1px solid rgb(207, 35, 64);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -44,8 +39,14 @@
   // background: transparent;
 }
 
+.services .ser {
+  position: absolute;
+  border: 1px solid rgb(114, 26, 214);
+}
 
+// .services .ser:nth-child(1) {
 
+// }
 
 
 
