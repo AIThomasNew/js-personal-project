@@ -36,9 +36,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   // background: transparent;
-  // border: 1px solid rgb(207, 35, 64);
+  border: 1px solid rgb(207, 35, 64);
 }
 
 // .services .ser {
@@ -49,15 +48,18 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  z-index: 2;
-  // border: 1px solid rgb(114, 26, 214);
-  // background: linear-gradient(-90deg, #142272, #9966cc);
   width: 600px;
   height: 200px;
+  position: relative;
+  overflow: hidden;
+
   li {
     list-style: none;
+    position: relative;
   }
   .icon {
+    z-index: 2;
+    position: relative;
     width: 80px;
     height: 80px;
     display: flex;
@@ -179,4 +181,13 @@ li {
 
 .swiper-container-3d .swiper-slide-shadow-right {
   background-image: none;
+}
+
+.content {
+  display: flex;
+  justify-content: flex-end;
+  svg {
+    width: 25px;
+    height: 25px;
+  }
 }
