@@ -6,6 +6,7 @@
   background: linear-gradient(-90deg, #142272, #9966cc);
   filter: drop-shadow(1px 1px 3px);
   z-index: 10000;
+  opacity: 0.8;
 }
 
 .menu {
