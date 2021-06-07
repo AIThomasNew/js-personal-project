@@ -1,31 +1,80 @@
 .head {
   display: flex;
-  // justify-content: center;
+  justify-content: center;
   position: fixed;
-  height: 80px;
+  height: 70px;
   width: 100%;
-  background: linear-gradient(-90deg, #142272, #9966cc);
-  filter: drop-shadow(1px 1px 3px);
+  background: linear-gradient(-90deg, #142272, #27337a, #9966cc);
+  filter: drop-shadow(0px 1px 3px);
   z-index: 10000;
-  opacity: 0.8;
 }
-
-// #142272
-// #9966cc
 
 .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  height: 100%;
   width: 100%;
   .nav {
-    width: 650px;
+    width: 600px;
   }
 }
 
 .nav {
   display: flex;
   justify-content: space-evenly;
+}
+
+.btn-order {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid rgb(202, 154, 250);
+  // background-color: white;
+  background-color: transparent;
+  color: rgb(202, 154, 250);
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.btn-order:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.btn-order::before {
+  content: '';
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%,-50%);
+  width: 0;
+  height: 0;
+  background: rgb(228, 154, 250);
+  border-radius: 50%;
+  transition: width 0.5s, height 0.5s;
+}
+
+.btn-order:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+.btn-order:active {
+  background-color: white;
+}
+
+.btn-order span {
+  position: relative;
+  z-index: 1;
 }
 
 .logo {
@@ -37,27 +86,18 @@
     background-color: transparent;
     color: white;
     box-sizing: border-box;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
     font-weight: 550;
     width: 220px;
     height: 50px;
-    transition: all ease 100ms;
-    margin-right: 30px;
+    transition: all ease 500ms;
   }
   #btn-logo:hover {
     cursor: pointer;
-    color: #142272;
-    background: white;
-    border: 1px solid white;
-    transform: translate(0px, -5px);
-    transition: 200ms;
-  }
-  #btn-logo:active {
-    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white;
-    transition: 30ms;
+    color: white;
+    transform: scale(1.1);
+    transition: 500ms;
   }
 }
 

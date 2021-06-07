@@ -1,75 +1,19 @@
 .main-layout {
   display: grid;
-  grid-template-rows: 100px 100px 100px 740px 450px 500px;
-  padding-top: 80px;
-  min-height: 2000px;
+  grid-template-rows: 740px 100px 450px 440px;
+  padding-top: 70px;
+  min-height: 1000px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(-90deg, #142272, #9966cc);
+  background-color: white;
 }
 
-.services {
-  width: 100%;
-  height: 100vh;
+#feedback {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #cf2340;
-}
-
-.list {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 600px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-}
-.list li {
-  list-style: none;
-  position: relative;
-}
-.list .icon {
-  z-index: 2;
-  position: relative;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid rgba(250, 250, 250, 0.4);
-  border-right: 1px solid rgba(250, 250, 250, 0.2);
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
-  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  text-decoration: none;
-  transition: 0.5s;
-  overflow: hidden;
-}
-.list .icon svg {
-  width: 30px;
-  height: 30px;
-  color: white;
-}
-
-.icon:hover {
-  transform: translateY(-20px);
-}
-
-.icon::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50px;
-  height: 100%;
-  background: rgba(250, 250, 250, 0.5);
-  transform: skewX(45deg) translateX(150px);
-  transition: 0.5s;
-}
-
-.icon:hover::before {
-  transform: skewX(45deg) translateX(-150px);
+  color: #142272;
+  font-weight: 100;
+  font-size: 35px;
 }
 
 .swiper-container {
@@ -82,18 +26,22 @@
 .swiper-slide {
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
-  padding: 15px 25px 30px 25px;
+  padding: 25px 25px 30px 25px;
   font-size: 13px;
   color: #a3a3a3;
   border: 1px solid silver;
   border-radius: 10px;
   background-position: center;
   background-size: cover;
-  width: 190px;
-  height: 270px;
+  width: 210px;
+  height: 280px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   background-color: #badff8;
-  filter: blur(4px);
+  filter: blur(2px);
+}
+.swiper-slide p {
+  padding-top: 5px;
+  line-height: 18px;
 }
 
 .swiper-slide-active {
