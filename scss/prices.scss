@@ -2,21 +2,48 @@
   border-top: 1px solid silver;
   border-bottom: 1px solid silver;
   display: flex;
+  justify-content: space-between;
   background: linear-gradient(-90deg, #142272, #27337a, #9966cc);
   margin-top: 50px;
+  overflow: hidden;
 }
 
-.bg-prices {
+.prices-wrap {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 2;
+  margin: 30px;
 }
 
-.bg-pr {
+.prices-wrap .card {
+  z-index: 1;
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bg-prices1 {
   display: flex;
   justify-content: flex-start;
-  width: 100%;
+  align-items: center;
 }
 
 .pulseOne {
@@ -25,7 +52,7 @@
   height: 200px;
   background: #9966cc;
   border-radius: 50%;
-  margin-left: 150px;
+  // margin-left: 150px;
 }
 
 .pulseOne span {
@@ -55,6 +82,43 @@
   }
 }
 
-.prices-wrap {
-  
+.bg-prices2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pulseTwo {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #141f61;
+  border-radius: 50%;
+}
+
+.pulseTwo span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #141f61;
+  border-radius: 50%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  animation: animate 4s linear infinite;
+  animation-delay: calc(-0.5s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+    opacity: 0.5;
+  }
+  90% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
 }
