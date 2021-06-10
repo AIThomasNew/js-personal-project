@@ -1,3 +1,16 @@
+// модально окно входа и регистрации
+//===============================================================
+
+.modal-block {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Commissioner, sans-serif;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+}
+
 .modal-block.open .modal-wrap,
 .modal-block.open .modal-window {
   opacity: 1;
@@ -14,46 +27,268 @@
   z-index: -1;
 }
 
+//===============================================================
+
 .modal-wrap {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  font-family: 'Commissioner', sans-serif;
-  .modal-window {
-    width: 600px;
-    border-radius: 5px;
-    background: white;
-    height: 400px;
-    margin: 0 auto;
-    transform: translateY(-200px);
-    transition: transform 0.2s ease-in;
-  }
-  .modal-header {
-    padding: 5px 10px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid rgb(231, 231, 231);
-  }
-  .modal-title {
-    font-size: 1.5rem;
-  }
-  .modal-close {
-    cursor: pointer;
-  }
-  .modal-close:hover {
-    color: rgb(93, 156, 252);
-  }
-  .modal-body {
-    padding: 10px;
-    p {
-      margin: 0 0 5px;
-    }
-  }
-  .modal-footer {
-    padding: 5px 10px;
-    border-top: 1px solid rgb(231, 231, 231);
-  }
+  border: 1px solid black;
+  z-index: 1000;
 }
+
+.modal-window {
+  position: relative;
+  min-width: 800px;
+  // width: 1100px;
+  min-height: 550px;
+  // height: 550px;
+  display: flex;
+  z-index: 1000;
+  margin: 0 auto;
+  transform: translateY(-200px);
+  transition: transform 0.3s;
+}
+
+.modal-window .contactInfo {
+  position: absolute;
+  top: 40px;
+  width: 270px;
+  height: calc(100% - 160px);
+  background: linear-gradient(220deg, #142272, #9966cc);
+  z-index: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  border-radius: 2px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+}
+
+.modal-header .modal-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  cursor: pointer;
+  color: #142272;
+  transition: 0.3s;
+}
+
+.modal-close:hover {
+  color: #9966cc;
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.modal-form .modal-header {
+  display: flex;
+  justify-content: flex-end;
+  height: 38px;
+}
+
+.modal-window .modal-form {
+  position: absolute;
+  // padding: 70px 50px;
+  padding-left: 250px;
+  margin-left: 150px;
+  width: calc(100% - 150px);
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+
+.modal-window .contactForm {
+  padding-top: 30px;
+  padding-left: 0px;
+  padding-right: 50px;
+}
+
+.modal-window .contactForm h2 {
+  color: #142272;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.modal-window .contactForm .formBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.modal-window .contactForm .formBox .inputBox {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.w50 {
+  width: 47%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.modal-window .contactForm .formBox .inputBox input,
+.modal-window .contactForm .formBox .inputBox textarea {
+  width: 100%;
+  resize: none;
+  padding: 5px 0;
+  font-size: 18px;
+  font-weight: 300;
+  color: #333;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #777;
+}
+
+.modal-window .contactForm .formBox .inputBox textarea {
+  height: 120px;
+}
+
+.modal-window .contactForm .formBox .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  pointer-events: none;
+  font-size: 18px;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.modal-window .contactForm .formBox .inputBox input:focus ~ span,
+.modal-window .contactForm .formBox .inputBox input:valid ~ span,
+.modal-window .contactForm .formBox .inputBox textarea:focus ~ span {
+  transform: translateY(-20px);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #142272;
+  font-weight: 500;
+}
+
+.modal-window .contactForm .formBox .inputBox input[type='submit'] {
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+  background-color: #142272;
+  transition: 0.3s;
+  max-width: 165px;
+  padding: 12px;
+  border-radius: 2px;
+}
+
+#submit-order:hover {
+  background-color: #9966cc;
+  transition: 0.3s;
+}
+
+// @media (max-width: 1200px) {
+//   .modal-window {
+//     width: 90%;
+//     min-width: auto;
+//     margin: 20px;
+//     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+//   }
+//   .contactInfo {
+//     top: 0;
+//     height: 550px;
+//     position: relative;
+//     box-shadow: none;
+//   }
+//   .modal-window .contactForm {
+//     position: relative;
+//     width: calc(100% - 350px);
+//     padding-left: 0;
+//     margin-left: 0;
+//     padding: 40px;
+//     height: 550px;
+//     box-shadow: none;
+//   }
+// }
+
+// @media (max-width: 991px) {
+//   // section::before {
+//   //   display: none;
+//   // }
+//   .modal-window {
+//     display: flex;
+//     flex-direction: column-reverse;
+//   }
+//   .modal-window .contactForm {
+//     width: 100%;
+//     height: auto;
+//   }
+//   .modal-window .contactInfo {
+//     width: 100%;
+//     height: auto;
+//     flex-direction: row;
+//   }
+//   .modal-window .contactInfo ul.sci {
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+
+// .modal-wrap {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   .modal-window {
+//     width: 600px;
+//     border-radius: 5px;
+//     background: white;
+//     height: 400px;
+//     margin: 0 auto;
+//     transform: translateY(-200px);
+//     transition: transform 0.3s ease-in;
+//   }
+//   .modal-header {
+//     padding: 5px 10px;
+//     display: flex;
+//     justify-content: space-between;
+//     border-bottom: 1px solid rgb(231, 231, 231);
+//   }
+//   .modal-title {
+//     font-size: 1.5rem;
+//   }
+//   .modal-close {
+//     cursor: pointer;
+//   }
+//   .modal-close:hover {
+//     color: rgb(93, 156, 252);
+//   }
+//   .modal-body {
+//     padding: 10px;
+//     p {
+//       margin: 0 0 5px;
+//     }
+//   }
+//   .modal-footer {
+//     padding: 5px 10px;
+//     border-top: 1px solid rgb(231, 231, 231);
+//   }
+// }
