@@ -1,11 +1,13 @@
 $color: white;
-$lighter: lighten($color,30%);
+$lighter: lighten($color, 30%);
 
 @import url(./header.css);
 @import url(./main.css);
 @import url(../css/footer.css);
 @import url(../css/modalwindow.css);
 @import url(../css/feedback.css);
+@import url(../css/prices.css);
+
 
 // @media screen and (min-width: 992px) and (max-width: 1200px) {
 // }
