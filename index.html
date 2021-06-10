@@ -24,13 +24,13 @@
           </div>
           <div class="nav">
             <a class="nav-links" href="#">Обо мне</a>
-            <a class="nav-links" href="#">Услуги</a>
+            <a class="nav-links" href="#prices">Услуги</a>
             <a class="nav-links" href="#">Портфолио</a>
             <a class="nav-links" href="#feedback">Отзывы</a>
             <a class="nav-links" href="#contact">Контакты</a>
           </div>
           <div>
-            <a href="#" class="btn-order"><span>ЗАКАЗАТЬ</span></a>
+            <a href="#" class="btn-order"><span>Заказ</span></a>
           </div>
         </div>
       </header>
@@ -62,8 +62,8 @@
           <div class="prices-wrap">
             <div class="card">
               <div class="card-content">
-                <h2>01</h2>
-                <h3>Card One</h3>
+                <h2>min</h2>
+                <h3>Лёгкий сайт</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
                   doloremque impedit quo dignissimos magni atque.
@@ -73,8 +73,8 @@
             </div>
             <div class="card">
               <div class="card-content">
-                <h2>02</h2>
-                <h3>Card Two</h3>
+                <h2>mid</h2>
+                <h3>Средний сайт</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
                   doloremque impedit quo dignissimos magni atque.
@@ -84,8 +84,8 @@
             </div>
             <div class="card">
               <div class="card-content">
-                <h2>03</h2>
-                <h3>Card Three</h3>
+                <h2>max</h2>
+                <h3>Сложный сайт</h3>
                 <p>
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
                   doloremque impedit quo dignissimos magni atque.
@@ -495,5 +495,14 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script feedback.js"></script>
     <script src="./js/btn-order.js"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll('.card'), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        'max-glare': 1,
+      });
+    </script>
   </body>
 </html>
