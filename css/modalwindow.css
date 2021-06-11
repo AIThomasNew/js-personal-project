@@ -50,7 +50,7 @@
   top: 40px;
   width: 270px;
   height: calc(100% - 160px);
-  background: linear-gradient(150deg, #142272, #795ef0);
+  background: linear-gradient(220deg, #142272, #795ef0);
   z-index: 1;
   padding: 40px;
   display: flex;

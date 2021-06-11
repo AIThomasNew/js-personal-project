@@ -4,7 +4,7 @@
   position: fixed;
   height: 70px;
   width: 100%;
-  background-color: #795ef0;
+  background: linear-gradient(-90deg, #142272, #795ef0);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 99;
 }

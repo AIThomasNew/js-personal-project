@@ -1,5 +1,5 @@
 #prices {
-  background-color: #b9bbdd;
+  background-color: #142272;
   margin-top: 100px;
   margin-bottom: 100px;
   overflow: hidden;
@@ -8,15 +8,56 @@
   align-items: center;
 }
 
+.prices-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-png1 {
+  width: 550px;
+  margin-right: 390px;
+  margin-top: 90px;
+  animation: animatePrice 4s linear infinite;
+}
+
+@keyframes animatePrice {
+  0% {
+    transform: translate3d(0, -7px, 0);
+  }
+  50% {
+    transform: translate3d(0, 7px, 0);
+  }
+  100% {
+    transform: translate3d(0, -7px, 0);
+  }
+}
+.bg-png2 {
+  width: 550px;
+  margin-left: 390px;
+  margin-top: 90px;
+  animation: animatePrice2 6s linear infinite;
+}
+
+@keyframes animatePrice2 {
+  0% {
+    transform: translate3d(0, 7px, 0);
+  }
+  50% {
+    transform: translate3d(0, -7px, 0);
+  }
+  100% {
+    transform: translate3d(0, 7px, 0);
+  }
+}
 .prices-wrap {
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   z-index: 2;
   margin: 30px;
-  border: 1px solid black;
 }
 
 .prices-wrap .card {
