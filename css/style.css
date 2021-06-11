@@ -4,6 +4,9 @@
 @import url(../css/modalwindow.css);
 @import url(../css/feedback.css);
 @import url(../css/prices.css);
+@import url(../css/filter-client.css);
+@import url(../css/portfolio.css);
+@import url(../css/about.css);
 * {
   padding: 0px;
   margin: 0px;
