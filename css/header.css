@@ -4,7 +4,7 @@
   position: fixed;
   height: 70px;
   width: 100%;
-  background: linear-gradient(-90deg, #142272, #27337a, #9966cc);
+  background-color: #795ef0;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
@@ -15,6 +15,7 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  z-index: 100;
 }
 .menu .nav {
   width: 600px;
@@ -63,7 +64,7 @@ button:focus {
 }
 
 .nav-links {
-  color: lightgray;
+  color: #fff;
   text-decoration: none;
   text-align: center;
   transition: 100ms;
@@ -71,7 +72,7 @@ button:focus {
 
 .nav-links:hover {
   cursor: pointer;
-  color: white;
+  color: #cccccc;
   transition: 500ms;
 }
 
@@ -80,9 +81,9 @@ button:focus {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
+  width: 160px;
   height: 35px;
-  border-radius: 2px;
+  border-radius: 5px;
   border: 1px solid #fff;
   background-color: transparent;
   color: #fff;
@@ -103,8 +104,8 @@ button:focus {
 }
 
 .btn-order:active {
-  background-color: #9966cc;
-  border: 1px solid #9966cc;
+  background-color: #795ef0;
+  border: 1px solid #fff;
   color: #142272;
   transition: 0.2s;
 }

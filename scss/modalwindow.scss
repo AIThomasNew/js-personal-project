@@ -57,7 +57,7 @@
   top: 40px;
   width: 270px;
   height: calc(100% - 160px);
-  background: linear-gradient(220deg, #142272, #9966cc);
+  background: linear-gradient(150deg, #142272, #795ef0);
   z-index: 1;
   padding: 40px;
   display: flex;
@@ -66,13 +66,13 @@
   justify-content: space-between;
   box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
   color: #fff;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
-  border-radius: 2px;
+  border-radius: 10px;
 }
 
 .modal-header .modal-close {
@@ -86,7 +86,7 @@
 }
 
 .modal-close:hover {
-  color: #9966cc;
+  color: #795ef0;
   transform: rotate(180deg);
   transition: 0.3s;
 }
@@ -187,11 +187,11 @@
   transition: 0.3s;
   max-width: 165px;
   padding: 12px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 #submit-order:hover {
-  background-color: #9966cc;
+  background-color: #795ef0;
   transition: 0.3s;
 }
 
