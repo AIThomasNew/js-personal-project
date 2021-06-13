@@ -15,6 +15,12 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>Thomas Code</title>
   </head>
+
+  <!-- цвета сайта -->
+  <!-- #795ef0 фео -->
+  <!-- #142272 синий -->
+  <!-- #c75ef0 аметистовый -->
+
   <body>
     <div class="wrapper">
       <header class="head">
@@ -36,16 +42,33 @@
       </header>
 
       <main class="main-layout">
-
         <section id="about">
-          <div class="anim"></div>
-          <div class="photo"></div>
+          <div class="anim">
+            <canvas class="anim3D"></canvas>
+          </div>
+          <div class="myInfo">
+            <div class="myInfo1">
+              <div class="photobox">
+                <img class="myphoto" src="./img/iam1.png" alt="" />
+              </div>
+            </div>
+            <div class="myInfo2">
+              <div class="infobox">
+                <h2>
+                  Добро пожаловать!
+                </h2>
+                <p>
+                  Меня зовут Томас Неганов и я Web-Разработчик. Я занимаюсь тем, что улучшаю жизнь людей, разрабатывая для них продукт мечты!
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="filter-client">
           <div class="filter-wrap">
             <div>
-              <img class="imgComp" src="." alt="">
+              <img class="imgComp" src="" alt="" />
             </div>
             <div></div>
             <div></div>
@@ -55,15 +78,15 @@
 
         <section id="prices">
           <div class="prices-wrapper">
-            <img class="bg-png1" src="./img/1.png" alt="">
+            <img class="bg-png1" src="./img/1.png" alt="" />
             <div class="prices-wrap">
               <div class="card">
                 <div class="card-content">
                   <!-- <h2>min</h2> -->
                   <h3>Лёгкий сайт</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                    doloremque impedit quo dignissimos magni atque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Enim doloremque impedit quo dignissimos magni atque.
                   </p>
                   <a href="#">Читать больше...</a>
                 </div>
@@ -73,8 +96,8 @@
                   <!-- <h2>mid</h2> -->
                   <h3>Средний сайт</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                    doloremque impedit quo dignissimos magni atque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Enim doloremque impedit quo dignissimos magni atque.
                   </p>
                   <a href="#">Читать больше...</a>
                 </div>
@@ -84,21 +107,19 @@
                   <!-- <h2>max</h2> -->
                   <h3>Сложный сайт</h3>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim
-                    doloremque impedit quo dignissimos magni atque.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Enim doloremque impedit quo dignissimos magni atque.
                   </p>
                   <a href="#">Читать больше...</a>
                 </div>
               </div>
             </div>
-            <img class="bg-png2" src="./img/2.png" alt="">
+            <img class="bg-png2" src="./img/2.png" alt="" />
           </div>
         </section>
 
         <section id="portfolio">
-          <div>
-
-          </div>
+          <div></div>
         </section>
 
         <div id="feedback"><p>ОТЗЫВЫ КЛИЕНТОВ</p></div>
@@ -476,8 +497,9 @@
       </footer>
     </div>
     <!-- Скрипты ===================================================== -->
+
     <script src="./js/base.js"></script>
-    <script src="./plugins/modal.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/app.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script feedback.js"></script>
@@ -491,5 +513,7 @@
         'max-glare': 1,
       });
     </script>
+    <script src="./js/three.js"></script>
+    <script src="./js/anim3d.js"></script>
   </body>
 </html>

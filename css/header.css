@@ -21,11 +21,6 @@
   width: 600px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-evenly;
-}
-
 .logo #btn-logo {
   display: inline-flex;
   justify-content: center;
@@ -55,8 +50,8 @@
   height: 27px;
   width: 400px;
   font-family: "Commissioner", sans-serif;
-  font-size: 19px;
-  font-weight: 100;
+  font-size: 17px;
+  font-weight: 200;
 }
 
 button:focus {

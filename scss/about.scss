@@ -1,3 +1,69 @@
 #about {
-  border: 1px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  // border: 1px solid #795ef0;
+}
+
+.anim {
+  height: 600px;
+  width: 600px;
+  border: 1px solid #795ef0;
+}
+
+.anim3D {
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.myInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // border: 1px solid #795ef0;
+  height: 600px;
+  width: 600px;
+}
+
+.myInfo1 {  
+  padding: 20px;
+}
+
+.myInfo2 {
+  padding: 20px;
+}
+
+.photobox {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid black;
+  height: 300px;
+}
+
+.myphoto {
+  width: 300px;
+}
+
+.infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 1px solid #795ef0;
+  width: 480px;
+  
+}
+
+.infobox h2 {
+  color: #795ef0;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.infobox p {
+  font-size: 20px;
+  font-weight: 600;
 }
