@@ -1,11 +1,9 @@
 #prices {
-  background-color: #0673e6;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0673e6;
+  overflow: hidden;
 }
 
 .prices-wrapper {
@@ -55,42 +53,29 @@
           backdrop-filter: blur(5px);
 }
 
-#prices .card .card-content {
+.card-content {
   padding: 20px;
-  text-align: center;
-  transition: 0.5s;
-  opacity: 0.5;
-}
-
-#prices .card:hover .card-content {
-  opacity: 1;
-}
-
-#prices .card .card-content h2 {
-  position: absolute;
-  top: -80px;
-  right: 30px;
-  font-size: 8em;
-  color: rgba(255, 255, 255, 0.05);
-  pointer-events: none;
+  display: grid;
+  grid-template-rows: 1fr 4fr 1fr;
+  align-items: center;
 }
 
 #prices .card .card-content h3 {
-  font-size: 1.8em;
+  font-size: 2em;
   color: #fff;
   z-index: 1;
+  text-align: center;
 }
 
 #prices .card .card-content p {
-  font-size: 1em;
+  font-size: 1.1em;
   color: #fff;
   font-weight: 300;
 }
 
 #prices .card .card-content a {
-  position: relative;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 10px 20px;
   margin-top: 15px;
   background-attachment: #fff;
   background-color: #fff;

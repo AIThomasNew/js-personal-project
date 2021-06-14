@@ -1,6 +1,6 @@
 .main-layout {
   display: grid;
-  grid-template-rows: 1000px 900px 850px 700px 440px 450px 550px;
+  grid-template-rows: 1000px 900px 900px 100px 100px 450px 550px;
   min-height: auto;
   font-family: Commissioner, sans-serif;
   background-color: white;
