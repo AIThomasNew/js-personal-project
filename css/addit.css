@@ -1,12 +1,12 @@
-#filter-client {
+#addit {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(223, 223, 223);
-  // margin-top: 100px;
+  background-color: #dfdfdf;
+  overflow: hidden;
 }
 
-.filter-wrap {
+.addit-wrap {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,27 +15,28 @@
   height: 100%;
 }
 
-.reklam-text {
+.addit-text {
   display: flex;
   justify-content: space-around;
   width: 1200px;
   height: 300px;
-  svg {
-    width: 60px;
-    height: 60px;
-    padding-bottom: 10px;
-  }
 }
-
-.rek {
-  width: 250px;
-  overflow: hidden;
-}
-
-.rek h2 {
+.addit-text svg {
+  width: 60px;
+  height: 60px;
   padding-bottom: 10px;
 }
 
-.imgComp {
+.addit-box {
+  width: 280px;
+  overflow: hidden;
+}
+
+.addit-box h2 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.additImg {
   height: 350px;
 }

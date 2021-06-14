@@ -10,7 +10,7 @@
 .animbox {
   height: 600px;
   width: 600px;
-  border: 1px solid #795ef0;
+  border: 1px solid #0673e6;
 }
 .animbox .anim3D {
   position: relative;
@@ -71,7 +71,7 @@
   justify-content: center;
   align-items: center;
   width: 130px;
-  height: 35px;
+  height: 37px;
   border-radius: 5px;
   background-color: #0673e6;
   font-family: "Commissioner", sans-serif;

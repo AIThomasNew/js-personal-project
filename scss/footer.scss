@@ -1,19 +1,19 @@
 .footer-layout {
+  margin-top: -200px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  // background: linear-gradient(-40deg, #0c154b, #142272, #795ef0);
-  // background-color: #795ef0;
+  height: 400px;
   background-color: #10151b;
   color: white;
   font-family: 'Commissioner', sans-serif;
   font-size: 19px;
   font-weight: 100;
+  overflow: hidden;
 }
 
 #contact {
-  // width: 100%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -89,7 +89,7 @@
   //   cursor: pointer;
   //   color: lighten($color: white, $amount: 100%);
   //   transition: 500ms;
-    
+
   // }
   // li {
   //   list-style: none;

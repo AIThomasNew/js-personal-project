@@ -57,7 +57,7 @@
   top: 40px;
   width: 270px;
   height: calc(100% - 160px);
-  background: linear-gradient(220deg, #142272, #795ef0);
+  background: linear-gradient(150deg, #1d2e92, #0673e6);
   z-index: 1;
   padding: 40px;
   display: flex;
@@ -86,7 +86,7 @@
 }
 
 .modal-close:hover {
-  color: #795ef0;
+  color: #0673e6;
   transform: rotate(180deg);
   transition: 0.3s;
 }
@@ -183,7 +183,7 @@
   position: relative;
   cursor: pointer;
   color: #fff;
-  background-color: #142272;
+  background-color: #0673e6;
   transition: 0.3s;
   max-width: 165px;
   padding: 12px;
@@ -191,7 +191,7 @@
 }
 
 #submit-order:hover {
-  background-color: #795ef0;
+  background-color: #067eff;
   transition: 0.3s;
 }
 
