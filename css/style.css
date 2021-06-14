@@ -15,5 +15,5 @@
 
 .wrapper {
   display: grid;
-  grid-template-rows: 100% 270px;
+  grid-template-rows: 100% 400px;
 }

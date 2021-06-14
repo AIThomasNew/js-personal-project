@@ -1,5 +1,5 @@
 #prices {
-  background-color: #142272;
+  background-color: #0673e6;
   margin-top: 100px;
   margin-bottom: 100px;
   overflow: hidden;
@@ -17,7 +17,7 @@
 .bg-png1 {
   width: 550px;
   margin-right: 390px;
-  margin-top: 90px;
+  margin-top: 100px;
   animation: animatePrice 4s linear infinite;
 }
 
