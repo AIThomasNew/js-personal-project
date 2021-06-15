@@ -5,20 +5,11 @@
   align-items: center;
   background-color: #10151b;
   padding-bottom: 100px;
-}
-
-.animbox {
-  height: 600px;
-  width: 600px;
-  border: 1px solid #0673e6;
-  .anim3D {
-    position: relative;
-    left: 0;
-    top: 0;
-  }
+  box-sizing: border-box;
 }
 
 .myInfo {
+  // border: 1px solid #0673e6;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -43,8 +34,6 @@
   }
 }
 
-
-
 .infobox {
   display: flex;
   flex-direction: column;
@@ -64,7 +53,7 @@
   font-size: 20px;
   font-weight: 400;
   color: #fff;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
 
 .btn-order2 {
@@ -117,7 +106,8 @@
   0% {
     left: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     left: 100%;
   }
 }
@@ -136,7 +126,8 @@
   0% {
     top: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     top: 100%;
   }
 }
@@ -155,7 +146,8 @@
   0% {
     right: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     right: 100%;
   }
 }
@@ -174,7 +166,40 @@
   0% {
     bottom: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     bottom: 100%;
   }
+}
+
+.animbox {
+  height: 600px;
+  width: 600px;
+  border: 1px solid #0673e6;
+}
+
+.anim3D {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.anim3D span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.anim3D span::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #0673e6;
+  
 }
