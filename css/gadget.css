@@ -1,0 +1,9 @@
+#gadget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gadgetImg {
+  height: 320px;
+}

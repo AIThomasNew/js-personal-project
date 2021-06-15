@@ -46,14 +46,28 @@
         <section id="about">
           <div class="animbox">
             <div class="anim3D">
-              <span style="--i:1;"></span>
-              <span style="--i:2;"></span>
-              <span style="--i:3;"></span>
-              <span style="--i:4;"></span>
-              <span style="--i:5;"></span>
-              <span style="--i:6;"></span>
-              <span style="--i:7;"></span>
-              <span style="--i:8;"></span>
+              <svg class="animSvg">
+                <filter id="gooey">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                  <feColorMatrix
+                    values="
+                    1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+                  ></feColorMatrix>
+                </filter>
+              </svg>
+              <span style="--i: 1"></span>
+              <span style="--i: 2"></span>
+              <span style="--i: 3"></span>
+              <span style="--i: 4"></span>
+              <span style="--i: 5"></span>
+              <span style="--i: 6"></span>
+              <span style="--i: 7"></span>
+              <span style="--i: 8"></span>
+              <span class="rotate" style="--j: 0"></span>
+              <span class="rotate" style="--j: 1"></span>
+              <span class="rotate" style="--j: 2"></span>
+              <span class="rotate" style="--j: 3"></span>
+              <span class="rotate" style="--j: 4"></span>
             </div>
           </div>
           <div class="myInfo">
@@ -66,7 +80,9 @@
               <div class="infobox">
                 <h2>Добро пожаловать!</h2>
                 <p>
-                  Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я занимаюсь созданием сайтов, сервисов и поддерживаю своих постоянных клиентов!
+                  Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я
+                  занимаюсь созданием сайтов, сервисов и поддерживаю своих
+                  постоянных клиентов!
                 </p>
                 <a href="#" class="btn-order2">
                   <span></span>
@@ -82,10 +98,37 @@
 
         <section id="forClient">
           <div class="forClient-wrapper">
+            <div class="FC-content1">
+              <h2>Чем я могу помочь?</h2>
+            </div>
+            <div class="FC-content2">
+              <div class="FC-box">
+                <h3>Разработка подключ</h3>
+              </div>
+              <div class="FC-box">
+                <h3>Технологии</h3>
+              </div>
+              <div class="FC-box">
+                <h3>Оригинальность</h3>
+              </div>
+              <div class="FC-box">
+                <h3>Дизайн</h3>
+              </div>
+              <div class="FC-box">
+                <h3>Аналитика</h3>
+              </div>
+              <div class="FC-box">
+                <h3>Поддержка</h3>
+              </div>
+            </div>
           </div>
+          
         </section>
 
-        <section class="myHelp">
+        <section id="gadget">
+          <div>
+            <img class="gadgetImg" src="./img/гаджеты.png" alt="">
+          </div>
         </section>
 
         <section id="prices">
@@ -97,7 +140,8 @@
                   <!-- <h2>min</h2> -->
                   <h3>Лендинг</h3>
                   <p>
-                    Одностраничный сайт. Сайт-визитка создается за такую же цену.
+                    Одностраничный сайт. Сайт-визитка создается за такую же
+                    цену.
                   </p>
                   <a href="#">Читать больше...</a>
                 </div>
