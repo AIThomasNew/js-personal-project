@@ -1,0 +1,28 @@
+#original-analytics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  // background: linear-gradient(180deg,#64a0e0, #0673e6);
+}
+
+.oa-Wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 955px;
+  height: 600px;
+  // border: 1px solid black;
+}
+
+.original {
+  width: 460px;
+  height: 460px;
+  border: 1px solid black;
+}
+
+.analytics {
+  width: 460px;
+  height: 460px;
+  border: 1px solid black;
+}

@@ -4,6 +4,43 @@
   align-items: center;
 }
 
-.gadgetImg {
-  height: 320px;
+.gadgetWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 955px;
+  height: 600px;
+  // border: 1px solid black;
+}
+
+.gg-box1 {
+  height: 300px;
+  width: 550px;
+}
+
+.gg-box1 h2 {
+  font-weight: 500;
+  font-size: 50px;
+  padding-bottom: 20px;
+}
+
+.gg-box1 p {
+  font-weight: 200;
+  font-size: 30px;
+  padding-bottom: 20px;
+
+}
+
+.gg-box2 {
+  height: 300px;
+}
+
+.gg-content1 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gg-content2 {
+  display: flex;
+  justify-content: flex-end;
 }
