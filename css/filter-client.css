@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e4e4e4;
+  background-color: #fff;
 }
 
 .forClient-wrapper {
@@ -36,6 +36,11 @@
   align-items: center;
   justify-content: center;
   transition: 0.5s;
+}
+
+.FC-box:hover {
+  color: #0673e6;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
 }
 
 .FC-box svg {
