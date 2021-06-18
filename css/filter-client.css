@@ -13,6 +13,7 @@
   justify-content: space-evenly;
   align-items: center;
   color: #fff;
+  border: 1px solid #fff;
 }
 
 .forClient-wrapper h2 {
@@ -23,8 +24,8 @@
 .FC-content2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
-  row-gap: 20px;
+  column-gap: 58px;
+  row-gap: 60px;
   place-items: center;
   align-items: center;
 }
@@ -37,6 +38,7 @@
   align-items: center;
   justify-content: flex-start;
   transition: 0.5s;
+  word-spacing: 1px;
 }
 
 .FC-box svg {
