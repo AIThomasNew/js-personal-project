@@ -2,8 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(228, 228, 228);
-  // background-color: #fff;
+  background-color: #fff;
 }
 
 .gadgetWrapper {
@@ -12,24 +11,25 @@
   justify-content: space-between;
   width: 955px;
   height: 600px;
-  // border: 1px solid black;
 }
 
 .gg-box1 {
-  height: 300px;
-  width: 550px;
+  height: 50%;
+  // height: 300px;
+  width: 55%;
+  // width: 550px;
 }
 
 .gg-box1 h2 {
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 600;
+  font-size: 3rem;
   padding-bottom: 20px;
 }
 
 .gg-box1 p {
   font-weight: 200;
-  font-size: 30px;
-  padding-bottom: 20px;
+  font-size: 1.5rem;
+  // padding-bottom: 20px;
 
 }
 

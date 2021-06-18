@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #e4e4e4;
+  background-color: #fff;
 }
 
 .gadgetWrapper {
@@ -14,20 +14,19 @@
 }
 
 .gg-box1 {
-  height: 300px;
-  width: 550px;
+  height: 50%;
+  width: 55%;
 }
 
 .gg-box1 h2 {
-  font-weight: 500;
-  font-size: 50px;
+  font-weight: 600;
+  font-size: 3rem;
   padding-bottom: 20px;
 }
 
 .gg-box1 p {
   font-weight: 200;
-  font-size: 30px;
-  padding-bottom: 20px;
+  font-size: 1.5rem;
 }
 
 .gg-box2 {
