@@ -1,0 +1,73 @@
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-head h2 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+.animbox {
+  height: 400px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.anim3D {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  filter: url(#gooey);
+  animation: aboutAnimate 16s linear infinite;
+}
+
+.anim3D span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(calc(45deg * var(--i)));
+}
+
+.anim3D span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #99c1f7, #0673e6);
+  border-radius: 50%;
+  box-shadow: 0 0 30px #0673e6;
+}
+
+.rotate {
+  animation: aboutAnimate 4s ease-in-out infinite;
+  animation-delay: calc(-0.2s * var(--j));
+}
+
+@keyframes aboutAnimate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.animSvg {
+  width: 0;
+  height: 0;
+}

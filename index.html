@@ -140,7 +140,7 @@
                 </p>
               </div>
               <div class="FC-box">
-                <svg
+                <svg class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -182,10 +182,10 @@
                 </p>
               </div>
               <div class="FC-box">
-                <svg
+                <svg class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  width="60"
+                  height="60"
                   fill="currentColor"
                   class="bi bi-exclude"
                   viewBox="0 0 16 16"
@@ -283,11 +283,44 @@
         </section>
 
         <section id="portfolio">
-          <div></div>
+          <div class="portfolioWrapper">
+            <div class="portfolio-head">
+              <h2>Портфолио в процессе создания :)</h2>
+            </div>
+            <div class="animbox">
+              <div class="anim3D">
+                <svg class="animSvg">
+                  <filter id="gooey">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                    <feColorMatrix
+                      values="
+                      1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
+                    ></feColorMatrix>
+                  </filter>
+                </svg>
+                <span style="--i: 1"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 3"></span>
+                <span style="--i: 4"></span>
+                <span style="--i: 5"></span>
+                <span style="--i: 6"></span>
+                <span style="--i: 7"></span>
+                <span style="--i: 8"></span>
+                <span class="rotate" style="--j: 0"></span>
+                <span class="rotate" style="--j: 1"></span>
+                <span class="rotate" style="--j: 2"></span>
+                <span class="rotate" style="--j: 3"></span>
+                <span class="rotate" style="--j: 4"></span>
+              </div>
+            </div>
+          </div>
         </section>
 
-        <div id="feedback"><p>ОТЗЫВЫ КЛИЕНТОВ</p></div>
-        <section class="swiper-container mySwiper">
+        <div id="feedback">
+          <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
+        </div>
+        
+        <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="content">
@@ -538,7 +571,7 @@
             </div>
           </div>
           <!-- <div class="swiper-pagination"></div> -->
-        </section>
+        </div>
 
         <section id="addit">
           <div class="addit-wrap">

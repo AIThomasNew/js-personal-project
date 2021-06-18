@@ -13,7 +13,6 @@
   justify-content: space-evenly;
   align-items: center;
   color: #fff;
-  border: 1px solid #fff;
 }
 
 .forClient-wrapper h2 {
@@ -32,7 +31,7 @@
 
 .FC-box {
   width: 290px;
-  height: 230px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   align-items: center;
