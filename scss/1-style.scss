@@ -1,0 +1,30 @@
+@import url(./2-header.css);
+@import url(./3-main.css);
+@import url(./4-about.css);
+@import url(./5-gadget.css);
+@import url(./6-filter-client.css);
+@import url(./7-prices.css);
+@import url(./8-portfolio.css);
+@import url(./9-feedback.css);
+@import url(./10-addit.css);
+@import url(./11-footer.css);
+@import url(./12-modalwindow.css);
+
+@media (max-width: 990px) {
+  .container {
+    
+  }
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  outline: none;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100%;
+}
+
+// 768px и 480px

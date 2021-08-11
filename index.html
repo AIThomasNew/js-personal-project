@@ -11,13 +11,12 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
-    <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./scss/css/1-style.css" />
     <title>Thomas Code</title>
   </head>
 
   <body>
-    <div class="wrapper">
+    <div class="container">
       <header class="head">
         <div class="menu">
           <div class="logo">
@@ -36,8 +35,8 @@
               <span></span>
               <span></span>
               <span></span>
-              Заказ</a
-            >
+              Заказ
+            </a>
           </div>
         </div>
       </header>
@@ -663,6 +662,7 @@
           <p>© 2021 Thomas Code</p>
           <p>Все права защищены.</p>
         </div>
+
         <section id="contact">
           <ul class="list">
             <li class="list-icon">
@@ -745,8 +745,8 @@
               ></a>
             </li>
             <li class="list-icon">
-              <a class="icon" href="https://t.me/ThomasNeganov"
-                ><svg
+              <a class="icon" href="https://t.me/ThomasNeganov">
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -756,8 +756,9 @@
                 >
                   <path
                     d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
-                  /></svg
-              ></a>
+                  />
+                </svg>
+              </a>
             </li>
           </ul>
         </section>
@@ -776,6 +777,13 @@
     </div>
 
     <!-- Скрипты ===================================================== -->
+    <!-- <script>
+      $('.nav-toggle').on('click', function () {
+        $('.nav').toggleClass('active');
+      });
+    </script> -->
+    <script src="./js/jQuerry.js"></script>
+    <script src="./js/index.js"></script>
     <script src="./js/base.js"></script>
     <script src="./js/modal.js"></script>
     <script src="./js/app.js"></script>

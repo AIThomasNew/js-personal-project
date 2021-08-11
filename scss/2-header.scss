@@ -1,3 +1,17 @@
+@media (max-width: 990px) {
+
+}
+
+@media (max-width: 768px) {
+}
+
+// 320
+// 480
+// 760
+// 960
+//* 1200
+//* 1600
+
 .head {
   display: flex;
   justify-content: center;
@@ -15,30 +29,32 @@
   align-items: center;
   height: 100%;
   width: 100%;
+  .nav {
+    width: 600px;
+  }
   z-index: 100;
 }
-.menu .nav {
-  width: 600px;
-}
 
-.logo #btn-logo {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  background-color: transparent;
-  color: white;
-  box-sizing: border-box;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 25px;
-  font-weight: 550;
-  width: 200px;
-  height: 50px;
-  transition: all ease 500ms;
-}
-.logo #btn-logo:hover {
-  cursor: pointer;
-  color: white;
+.logo {
+  #btn-logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+    width: 200px;
+    height: 50px;
+    transition: all ease 500ms;
+  }
+  #btn-logo:hover {
+    cursor: pointer;
+    color: white;
+  }
 }
 
 .nav {
@@ -47,7 +63,7 @@
   align-items: center;
   height: 27px;
   width: 400px;
-  font-family: "Commissioner", sans-serif;
+  font-family: 'Commissioner', sans-serif;
   font-size: 16px;
   font-weight: 500;
 }
@@ -78,7 +94,7 @@ button:focus {
   height: 35px;
   border-radius: 5px;
   background-color: #0673e6;
-  font-family: "Commissioner", sans-serif;
+  font-family: 'Commissioner', sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -97,7 +113,7 @@ button:focus {
 }
 
 .btn-order:active {
-  background-color: #cccccc;
+  background-color: darken($color: #fff, $amount: 20%);
   transition: 0.2s;
 }
 

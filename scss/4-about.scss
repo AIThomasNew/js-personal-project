@@ -14,12 +14,12 @@
   align-items: center;
   height: 600px;
   width: 600px;
-}
-.myInfo .myInfo1 {
-  padding: 20px;
-}
-.myInfo .myInfo2 {
-  padding: 20px;
+  .myInfo1 {
+    padding: 20px;
+  }
+  .myInfo2 {
+    padding: 20px;
+  }
 }
 
 .photobox {
@@ -28,9 +28,9 @@
   overflow: hidden;
   border: 1px solid black;
   height: 300px;
-}
-.photobox .myphoto {
-  width: 300px;
+  .myphoto {
+    width: 300px;
+  }
 }
 
 .infobox {
@@ -65,7 +65,7 @@
   height: 37px;
   border-radius: 5px;
   background-color: #0673e6;
-  font-family: "Commissioner", sans-serif;
+  font-family: 'Commissioner', sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -84,7 +84,7 @@
 }
 
 .btn-order2:active {
-  background-color: #cccccc;
+  background-color: darken($color: #fff, $amount: 20%);
   transition: 0.2s;
 }
 
@@ -106,10 +106,12 @@
   0% {
     left: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     left: 100%;
   }
 }
+
 .btn-order2 span:nth-child(2) {
   top: -100%;
   right: 0;
@@ -124,10 +126,12 @@
   0% {
     top: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     top: 100%;
   }
 }
+
 .btn-order2 span:nth-child(3) {
   bottom: 0;
   right: -100%;
@@ -142,10 +146,12 @@
   0% {
     right: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     right: 100%;
   }
 }
+
 .btn-order2 span:nth-child(4) {
   bottom: -100%;
   left: 0;
@@ -160,7 +166,8 @@
   0% {
     bottom: -100%;
   }
-  50%, 100% {
+  50%,
+  100% {
     bottom: 100%;
   }
 }
