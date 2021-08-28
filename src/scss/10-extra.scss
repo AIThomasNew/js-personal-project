@@ -1,4 +1,4 @@
-#addit {
+.main__extra {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 
-.addit-wrap {
+.main__extra__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
   text-align: justify;
 }
 
-.addit-text {
+.main__extra__wrapper__box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 60px;
@@ -27,16 +27,16 @@
   }
 }
 
-.addit-box {
+.main__extra__wrapper__box__text {
   width: 280px;
   overflow: hidden;
 }
 
-.addit-box h2 {
+.main__extra__wrapper__box__text h2 {
   padding-top: 10px;
   padding-bottom: 15px;
 }
 
-.additImg {
-  height: 350px;
-}
+// .additImg {
+//   height: 350px;
+// }

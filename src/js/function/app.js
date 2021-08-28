@@ -1,6 +1,6 @@
 const modal = $.modal();
 
-const login = document.querySelector('.btn-order');
+const login = document.querySelector('.menu__btn-order');
 login.addEventListener('click', fn);
 
 function fn() {

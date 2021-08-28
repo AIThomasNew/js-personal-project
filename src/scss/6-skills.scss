@@ -1,11 +1,11 @@
-#forClient {
+.main__skills {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #10151b;
 }
 
-.forClient-wrapper {
+.main__skills__wrapper {
   height: 100%;
   width: 100%;
   display: flex;
@@ -15,12 +15,12 @@
   color: #fff;
 }
 
-.forClient-wrapper h2 {
+.main__skills__wrapper h2 {
   font-size: 3.2rem;
   font-weight: 300;
 }
 
-.FC-content2 {
+.main__skills__wrapper__box-2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 58px;
@@ -42,21 +42,21 @@
 
 // содержание блоков
 
-.FC-box svg {
+.main__skills__wrapper__box-2__content svg {
   width: 70px;
   height: 70px;
   margin-bottom: 10px;
   // border: 1px solid #fff;
 }
 
-.FC-box h3 {
+.main__skills__wrapper__box-2__content h3 {
   font-size: 1.4rem;
   font-weight: 500;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
 
-.FC-box p {
+.main__skills__wrapper__box-2__content p {
   text-align: justify;
   padding: 0 15px 0 15px;
   font-weight: 300;
@@ -64,7 +64,7 @@
 
 // анимация
 
-.eye {
+.content__eye {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -74,7 +74,7 @@
   margin-bottom: 10px;
 }
 
-.eyeAnim {
+.content__eye__Anim {
   position: relative;
   display: block;
   width: 56px;
@@ -84,9 +84,7 @@
   border: 1px solid black;
 }
 
-
-
-.eye .eyeAnim::before {
+.content__eye .content__eye__Anim::before {
   content: '';
   position: absolute;
   transform: translate(-50%, -50%);
@@ -98,4 +96,3 @@
   background-color: black;
   border: 5px solid #0673e6;
 }
-

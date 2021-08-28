@@ -24,10 +24,10 @@
           </div>
           <div class="menu__nav">
             <a class="menu__nav-links" href="#1">Обо мне</a>
-            <a class="menu__nav-links" href="#prices">Услуги</a>
-            <a class="menu__nav-links" href="#">Портфолио</a>
-            <a class="menu__nav-links" href="#feedback">Отзывы</a>
-            <a class="menu__nav-links" href="#contact">Контакты</a>
+            <a class="menu__nav-links" href="#2">Услуги</a>
+            <a class="menu__nav-links" href="#3">Портфолио</a>
+            <a class="menu__nav-links" href="#4">Отзывы</a>
+            <a class="menu__nav-links" href="#5">Контакты</a>
           </div>
           <div class="menu__btn">
             <a href="#" class="menu__btn-order">
@@ -40,13 +40,9 @@
           </div>
         </div>
       </header>
-
-
-
       <main class="Container__main">
         <section class="main__home" id="1">
           <div class="main__home__animbox">
-
             <div class="anim3D">
               <svg class="animSvg">
                 <filter id="gooey">
@@ -72,21 +68,22 @@
               <span class="rotate" style="--j: 4"></span>
             </div>
           </div>
-          <div class="myInfo">
-            <div class="myInfo1">
-              <div class="photobox">
-                <img class="myphoto" src="./img/iam1.png" alt="" />
+
+          <div class="main__home__myInfo">
+            <div class="main__home__myInfo__box-1">
+              <div class="main__home__myInfo__box-1__photoWrapper">
+                <img class="myPhoto" src="./img/iam1.png" alt="" />
               </div>
             </div>
-            <div class="myInfo2">
-              <div class="infobox">
+            <div class="main__home__myInfo__box-2">
+              <div class="main__home__myInfo__box-2__textBox">
                 <h2>Добро пожаловать!</h2>
                 <p>
                   Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я
                   занимаюсь созданием сайтов, сервисов и поддерживаю своих
                   постоянных клиентов!
                 </p>
-                <a href="#" class="btn-order2">
+                <a href="#" class="textBox__btn-order2">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -97,11 +94,10 @@
             </div>
           </div>
         </section>
-
-        <section id="gadget">
-          <div class="gadgetWrapper">
-            <div class="gg-content1">
-              <div class="gg-box1">
+        <section class="main__description">
+          <div class="main__description__wrapper">
+            <div class="main__description__wrapper__box-1">
+              <div class="wrapper__box-1__text">
                 <h2>Сайт - это лицо вашего бизнеса.</h2>
                 <p>
                   Чем лучше его функциональность и дизайн, тем большую
@@ -111,26 +107,29 @@
                 </p>
               </div>
             </div>
-            <div class="gg-content2">
+            <div class="main__description__wrapper__box-2">
               <div>
-                <img class="gg-box2" src="./img/гаджеты.png" alt="" />
+                <img
+                  class="wrapper__box-1__image"
+                  src="./img/гаджеты.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
         </section>
-
-        <section id="forClient">
-          <div class="forClient-wrapper">
-            <div class="FC-content1">
+        <section class="main__skills">
+          <div class="main__skills__wrapper">
+            <div class="main__skills__wrapper__box-1">
               <h2>Чем я могу помочь ?</h2>
             </div>
-            <div class="FC-content2">
-              <div class="FC-box">
-                <div class="eye">
-                  <div class="eyeAnim">
+            <div class="main__skills__wrapper__box-2">
+              <div class="main__skills__wrapper__box-2__content">
+                <div class="content__eye">
+                  <div class="content__eye__Anim">
                     <!-- <div class="pupil"></div> -->
                   </div>
-                  <div class="eyeAnim">
+                  <div class="content__eye__Anim">
                     <!-- <div class="pupil"></div> -->
                   </div>
                 </div>
@@ -141,7 +140,7 @@
                   глубокого понимания и планирования.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="main__skills__wrapper__box-2__content">
                 <svg
                   class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +163,7 @@
                   Вам больше не надо искать дизайнера.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="main__skills__wrapper__box-2__content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -184,7 +183,7 @@
                   моего клиента. Этапы создания.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="main__skills__wrapper__box-2__content">
                 <svg
                   class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -205,7 +204,7 @@
                   как адаптивность под все устройства и анимации.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="main__skills__wrapper__box-2__content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -225,7 +224,7 @@
                   панели управления, передача управления сайтом в ваши руки.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="main__skills__wrapper__box-2__content">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -251,13 +250,12 @@
             </div>
           </div>
         </section>
-
-        <section id="prices">
-          <div class="prices-wrapper">
-            <img class="bg-png1" src="./img/1.png" alt="" />
-            <div class="prices-wrap">
-              <div class="card">
-                <div class="card-content">
+        <section class="main__prices" id="2">
+          <div class="main__prices__wrapper">
+            <img class="main__prices__wrapper__bg-1" src="./img/1.png" alt="" />
+            <div class="main__prices__wrapper__cards">
+              <div class="main__prices__wrapper__cards__card">
+                <div class="main__prices__wrapper__cards__card-content">
                   <h3>Лендинг</h3>
                   <p>
                     Одностраничный сайт. Сайт-визитка создается за такую же
@@ -266,8 +264,8 @@
                   <a href="#">Заказать</a>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-content">
+              <div class="main__prices__wrapper__cards__card">
+                <div class="main__prices__wrapper__cards__card-content">
                   <h3>Бизнес-сайт</h3>
                   <p>
                     Полное создание и оформление с различными анмиациями. Плюс
@@ -276,8 +274,8 @@
                   <a href="#">Заказать</a>
                 </div>
               </div>
-              <div class="card">
-                <div class="card-content">
+              <div class="main__prices__wrapper__cards__card">
+                <div class="main__prices__wrapper__cards__card-content">
                   <h3>Премиум</h3>
                   <p>
                     Сайт подключ, пять вариантов логотипа на выбор, полный
@@ -288,18 +286,17 @@
                 </div>
               </div>
             </div>
-            <img class="bg-png2" src="./img/2.png" alt="" />
+            <img class="main__prices__wrapper__bg-2" src="./img/2.png" alt="" />
           </div>
         </section>
-
-        <section id="portfolio">
-          <div class="portfolioWrapper">
-            <div class="portfolio-head">
+        <section class="main__portfolio" id="3">
+          <div class="main__portfolio__wrapper">
+            <div class="main__portfolio__wrapper__head">
               <h2>Портфолио в процессе создания :)</h2>
             </div>
-            <div class="animbox">
-              <div class="anim3D">
-                <svg class="animSvg">
+            <div class="main__portfolio__wrapper__animBox">
+              <div class="main__portfolio__wrapper__animBox__anim3D">
+                <svg class="main__portfolio__wrapper__animBox__anim3D__animSvg">
                   <filter id="gooey">
                     <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
                     <feColorMatrix
@@ -325,11 +322,9 @@
             </div>
           </div>
         </section>
-
-        <div id="feedback">
+        <div class="main__feedback" id="4">
           <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
         </div>
-
         <div class="swiper-container mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -582,11 +577,10 @@
           </div>
           <!-- <div class="swiper-pagination"></div> -->
         </div>
-
-        <section id="addit">
-          <div class="addit-wrap">
-            <div class="addit-text">
-              <div class="addit-box">
+        <section class="main__extra">
+          <div class="main__extra__wrapper">
+            <div class="main__extra__wrapper__box">
+              <div class="main__extra__wrapper__box__text">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -609,7 +603,7 @@
                   вашу волну и удерживают его.
                 </p>
               </div>
-              <div class="addit-box">
+              <div class="main__extra__wrapper__box__text">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -633,7 +627,7 @@
                   ресурс человека - это его время.
                 </p>
               </div>
-              <div class="addit-box">
+              <div class="main__extra__wrapper__box__text">
                 <div>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -659,49 +653,51 @@
           </div>
         </section>
       </main>
-
-
-
-
-
-
-
-
       <footer class="Container__footer">
-        <div>
+        <section>
           <p>© 2021 Thomas Code</p>
           <p>Все права защищены.</p>
-        </div>
+        </section>
 
-        <section id="contact">
-          <ul class="list">
-            <li class="list-icon">
+        <section class="footer__contact" id="5">
+          <ul class="footer__contact__list">
+            <li class="footer__contact__list-icon">
               <a
-                class="icon"
+                class="footer__contact__list-icon-a"
                 href="https://ru-ru.facebook.com/thomas.neganov.1/photos"
                 ><img src="./img/icon/vk.ico" alt=""
               /></a>
             </li>
-            <li class="list-icon">
+            <li class="footer__contact__list-icon">
               <a
-                class="icon"
+                class="footer__contact__list-icon-a"
                 href="https://www.linkedin.com/in/thomasneganov/"
               ></a>
             </li>
-            <li class="list-icon">
+            <li class="footer__contact__list-icon">
               <a
-                class="icon"
+                class="footer__contact__list-icon-a"
                 href="https://www.instagram.com/thomasneganov/?utm_medium=copy_link"
               ></a>
             </li>
-            <li class="list-icon">
-              <a class="icon" href="https://github.com/AIThomasNew"></a>
+            <li class="footer__contact__list-icon">
+              <a
+                class="footer__contact__list-icon-a"
+                href="https://github.com/AIThomasNew"
+              ></a>
             </li>
-            <li class="list-icon">
-              <a class="icon" href="https://twitter.com/ThomasNeganov"></a>
+            <li class="footer__contact__list-icon">
+              <a
+                class="footer__contact__list-icon-a"
+                href="https://twitter.com/ThomasNeganov"
+              ></a>
             </li>
-            <li class="list-icon">
-              <a class="icon" href="https://t.me/ThomasNeganov"> </a>
+            <li class="footer__contact__list-icon">
+              <a
+                class="footer__contact__list-icon-a"
+                href="https://t.me/ThomasNeganov"
+              >
+              </a>
             </li>
           </ul>
         </section>

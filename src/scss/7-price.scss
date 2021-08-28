@@ -1,4 +1,4 @@
-#prices {
+.main__prices {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,25 +6,25 @@
   overflow: hidden;
 }
 
-.prices-wrapper {
+.main__prices__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.bg-png1 {
+.main__prices__wrapper__bg-1 {
   width: 550px;
   margin-right: 390px;
   margin-top: 100px;
 }
 
-.bg-png2 {
+.main__prices__wrapper__bg-2 {
   width: 550px;
   margin-left: 390px;
   margin-top: 90px;
 }
 
-.prices-wrap {
+.main__prices__wrapper__cards {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -34,7 +34,7 @@
   margin: 30px;
 }
 
-.prices-wrap .card {
+.main__prices__wrapper__cards .main__prices__wrapper__cards__card {
   z-index: 1;
   position: relative;
   width: 280px;
@@ -52,27 +52,37 @@
   backdrop-filter: blur(5px);
 }
 
-.card-content {
+.main__prices__wrapper__cards__card-content {
   padding: 20px;
   display: grid;
   grid-template-rows: 1fr 4fr 1fr;
   align-items: center;
 }
 
-#prices .card .card-content h3 {
+.main__prices
+  .main__prices__wrapper__cards
+  .main__prices__wrapper__cards__card
+  .main__prices__wrapper__cards__card-content
+  h3 {
   font-size: 2em;
   color: #fff;
   z-index: 1;
   text-align: center;
 }
 
-#prices .card .card-content p {
+.main__prices
+  .main__prices__wrapper__cards__card
+  .main__prices__wrapper__cards__card-content
+  p {
   font-size: 1.1em;
   color: #fff;
   font-weight: 300;
 }
 
-#prices .card .card-content a {
+.main__prices
+  .main__prices__wrapper__cards__card
+  .main__prices__wrapper__cards__card-content
+  a {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 15px;
@@ -84,4 +94,3 @@
   font-weight: 500;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
-

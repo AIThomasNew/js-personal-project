@@ -1,4 +1,4 @@
-const btn = document.querySelector('.btn-order');
+const btn = document.querySelector('.menu__btn-order');
 btn.onmousemove = function (e) {
   const x = e.pageX - btn.offsetLeft;
   const y = e.pageY - btn.offsetTop;

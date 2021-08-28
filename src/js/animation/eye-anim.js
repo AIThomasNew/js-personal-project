@@ -5,7 +5,7 @@ document.querySelector('body').addEventListener('mousemove', eyeball);
 // Относительно документа
 
 function eyeball() {
-  const eyeAnim = document.querySelectorAll('.eyeAnim');
+  const eyeAnim = document.querySelectorAll('.content__eye__Anim');
   eyeAnim.forEach(function (eyeAnim) {
     let x = (eyeAnim.getBoundingClientRect().left) + (eyeAnim.clientWidth / 2);
     let y = (eyeAnim.getBoundingClientRect().top) + (eyeAnim.clientHeight / 2);

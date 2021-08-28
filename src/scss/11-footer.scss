@@ -13,13 +13,13 @@
   overflow: hidden;
 }
 
-#contact {
+.footer__contact {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-.list {
+.footer__contact__list {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,11 +27,11 @@
   height: 200px;
   position: relative;
   overflow: hidden;
-  .list-icon {
+  .footer__contact__list-icon {
     list-style: none;
     position: relative;
   }
-  .icon {
+  .footer__contact__list-icon-a {
     z-index: 2;
     position: relative;
     width: 80px;
@@ -55,11 +55,11 @@
   }
 }
 
-.icon:hover {
+.footer__contact__list-icon-a:hover {
   transform: translateY(-20px);
 }
 
-.icon::before {
+.footer__contact__list-icon-a::before {
   content: '';
   position: absolute;
   top: 0;
@@ -71,7 +71,7 @@
   transition: 0.5s;
 }
 
-.icon:hover::before {
+.footer__contact__list-icon-a:hover::before {
   transform: skewX(45deg) translateX(-150px);
 }
 

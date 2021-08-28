@@ -1,11 +1,11 @@
-#feedback {
+.main__feedback {
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(-90deg, #142272, #0673e6);
 }
 
-#feedback h2 {
+.main__feedback h2 {
   color: #fff;
   font-weight: 200;
   font-size: 3rem;

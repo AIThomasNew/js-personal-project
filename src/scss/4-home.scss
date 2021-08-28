@@ -8,32 +8,32 @@
   box-sizing: border-box;
 }
 
-.myInfo {
+.main__home__myInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
   width: 600px;
-  .myInfo1 {
+  .main__home__myInfo__box-1 {
     padding: 20px;
   }
-  .myInfo2 {
+  .main__home__myInfo__box-2 {
     padding: 20px;
   }
 }
 
-.photobox {
+.main__home__myInfo__box-1__photoWrapper {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid black;
   height: 300px;
-  .myphoto {
+  .myPhoto {
     width: 300px;
   }
 }
 
-.infobox {
+.main__home__myInfo__box-2__textBox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,13 +41,13 @@
   width: 480px;
 }
 
-.infobox h2 {
+.main__home__myInfo__box-2__textBox h2 {
   color: #0673e6;
   font-size: 50px;
   padding-bottom: 20px;
 }
 
-.infobox p {
+.main__home__myInfo__box-2__textBox p {
   word-spacing: 4px;
   font-size: 20px;
   font-weight: 400;
@@ -56,7 +56,7 @@
   text-align: center;
 }
 
-.btn-order2 {
+.textBox__btn-order2 {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -75,7 +75,7 @@
   transition: 0.3s;
 }
 
-.btn-order2:hover {
+.textBox__btn-order2:hover {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0 0 15px #fff, 0 0 20px #fff;
@@ -83,17 +83,17 @@
   color: black;
 }
 
-.btn-order2:active {
+.textBox__btn-order2:active {
   background-color: darken($color: #fff, $amount: 20%);
   transition: 0.2s;
 }
 
-.btn-order2 span {
+.textBox__btn-order2 span {
   position: absolute;
   display: block;
 }
 
-.btn-order2 span:nth-child(1) {
+.textBox__btn-order2 span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -112,7 +112,7 @@
   }
 }
 
-.btn-order2 span:nth-child(2) {
+.textBox__btn-order2 span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -132,7 +132,7 @@
   }
 }
 
-.btn-order2 span:nth-child(3) {
+.textBox__btn-order2 span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -152,7 +152,7 @@
   }
 }
 
-.btn-order2 span:nth-child(4) {
+.textBox__btn-order2 span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
