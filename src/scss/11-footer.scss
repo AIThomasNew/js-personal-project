@@ -1,4 +1,4 @@
-.footer-layout {
+.Container__footer {
   margin-top: -200px;
   display: flex;
   justify-content: space-evenly;
@@ -47,7 +47,7 @@
     text-decoration: none;
     transition: 0.5s;
     overflow: hidden;
-    svg {
+    img {
       width: 30px;
       height: 30px;
       color: white;

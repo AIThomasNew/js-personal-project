@@ -1,18 +1,4 @@
-@media (max-width: 990px) {
-
-}
-
-@media (max-width: 768px) {
-}
-
-// 320
-// 480
-// 760
-// 960
-//* 1200
-//* 1600
-
-.head {
+.Container__header {
   display: flex;
   justify-content: center;
   position: fixed;
@@ -35,7 +21,7 @@
   z-index: 100;
 }
 
-.logo {
+.menu__logo {
   #btn-logo {
     display: inline-flex;
     justify-content: center;
@@ -57,7 +43,7 @@
   }
 }
 
-.nav {
+.menu__nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -72,20 +58,20 @@ button:focus {
   outline: none;
 }
 
-.nav-links {
+.menu__nav-links {
   color: #fff;
   text-decoration: none;
   text-align: center;
   transition: 100ms;
 }
 
-.nav-links:hover {
+.menu__nav-links:hover {
   cursor: pointer;
   color: #0673e6;
   transition: 500ms;
 }
 
-.btn-order {
+.menu__btn .menu__btn-order {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -104,7 +90,7 @@ button:focus {
   transition: 0.3s;
 }
 
-.btn-order:hover {
+.menu__btn-order:hover {
   cursor: pointer;
   transition: 0.3s;
   box-shadow: 0 0 15px #fff, 0 0 20px #fff;
@@ -112,12 +98,12 @@ button:focus {
   color: black;
 }
 
-.btn-order:active {
+.menu__btn-order:active {
   background-color: darken($color: #fff, $amount: 20%);
   transition: 0.2s;
 }
 
-.btn-order span {
+.menu__btn-order span {
   position: absolute;
   display: block;
 }

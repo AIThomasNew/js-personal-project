@@ -1,0 +1,37 @@
+{
+  "name": "thomas-website",
+  "version": "1.0.0",
+  "description": "thomas website",
+  "main": "\\",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AIThomasNew/Planet-Ranking-GRID-CSS.git"
+  },
+  "keywords": [
+    "thomas",
+    "website",
+    "thomascode"
+  ],
+  "author": "Thomas Neganov <thomas.new.it@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AIThomasNew/Planet-Ranking-GRID-CSS/issues"
+  },
+  "homepage": "https://github.com/AIThomasNew/Planet-Ranking-GRID-CSS#readme",
+  "devDependencies": {
+    "webpack": "^5.51.1",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1"
+  }
+}
