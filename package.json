@@ -4,8 +4,8 @@
   "description": "thomas website",
   "main": "\\",
   "scripts": {
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
+    "build": "cross-env NODE_ENV=production webpack --mode production",
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
     "watch": "webpack --mode development --watch",
     "start": "webpack-dev-server --mode development --open"
   },
@@ -26,18 +26,18 @@
   },
   "homepage": "https://github.com/AIThomasNew/Planet-Ranking-GRID-CSS#readme",
   "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
     "webpack": "^5.51.1",
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
-    "clean-webpack-plugin": "^4.0.0-alpha.0",
-    "css-loader": "^6.2.0",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.2",
-    "mini-css-extract-plugin": "^2.2.0",
-    "node-sass": "^6.0.1",
-    "normalize.css": "^8.0.1",
-    "sass-loader": "^12.1.0",
-    "style-loader": "^3.2.1"
+    "normalize.css": "^8.0.1"
   }
 }
