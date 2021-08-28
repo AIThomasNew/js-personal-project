@@ -1,4 +1,4 @@
-let swiper = new Swiper('.mySwiper', {
+export const swiper = new Swiper('.mySwiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,

@@ -1,4 +1,4 @@
-function createAnalytics() {
+export default function createAnalytics() {
   let counter = 0;
   let destroyed = false;
 

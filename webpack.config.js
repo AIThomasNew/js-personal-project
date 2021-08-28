@@ -17,7 +17,7 @@ module.exports = {
     // analytics: './analytics.js',
   },
   output: {
-    filename: `./src/js/system/${filename('js')}`,
+    filename: `./${filename('js')}`,
     path: path.resolve(__dirname, 'app'),
   },
   plugins: [
@@ -30,15 +30,15 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-      path: path.resolve(__dirname, 'dist'),
+      filename: `./${filename('css')}`,
+      path: path.resolve(__dirname, 'app'),
     }),
   ],
   module: {
     rules: [
       /** CSS **/
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -51,12 +51,12 @@ module.exports = {
       },
       /** Pictures **/
       {
-        test: /\.(png|jpg|svg|gif|ico)$/,
+        test: /\.(png|jpg|svg|gif|ico)$/i,
         use: ['file-loader'],
       },
       /** SCSS **/
       {
-        test: /.(sass|scss)$/,
+        test: /.(s[ac]ss)$/i,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,

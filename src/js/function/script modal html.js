@@ -1,4 +1,4 @@
-function _createModal(options) {
+export default function _createModal(options) {
   const modal = document.createElement('div');
   modal.classList.add('modal-block');
   modal.insertAdjacentHTML(

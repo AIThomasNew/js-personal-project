@@ -4,7 +4,7 @@ document.querySelector('body').addEventListener('mousemove', eyeball);
 
 // Относительно документа
 
-function eyeball() {
+export default function eyeball() {
   const eyeAnim = document.querySelectorAll('.content__eye__Anim');
   eyeAnim.forEach(function (eyeAnim) {
     let x = (eyeAnim.getBoundingClientRect().left) + (eyeAnim.clientWidth / 2);
