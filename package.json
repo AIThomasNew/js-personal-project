@@ -4,7 +4,10 @@
   "description": "thomas website",
   "main": "\\",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,8 @@
   "keywords": [
     "thomas",
     "website",
-    "thomascode"
+    "thomascode",
+    "webpack"
   ],
   "author": "Thomas Neganov <thomas.new.it@gmail.com>",
   "license": "ISC",
@@ -30,7 +34,9 @@
     "css-loader": "^6.2.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.2.0",
     "node-sass": "^6.0.1",
+    "normalize.css": "^8.0.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.2.1"
   }

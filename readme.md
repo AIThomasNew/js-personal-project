@@ -1,3 +1,3 @@
-# Мой сайт Thomas Code
+# Thomas Code
 
-Это мой сайт для фриланса
+Thomas Code

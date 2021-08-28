@@ -1,6 +1,7 @@
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -18,13 +19,25 @@ module.exports = {
       template: './index.html',
     }),
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+      path: path.resolve(__dirname, 'dist'),
+    }),
   ],
   module: {
     rules: [
       /** CSS **/
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              reloadAl: true,
+            },
+          },
+          'css-loader',
+        ],
       },
       /** Pictures **/
       {
@@ -33,7 +46,7 @@ module.exports = {
       },
       /** SCSS **/
       {
-        test: /.s[ac]ss$/,
+        test: /.(sass|scss)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -45,6 +58,8 @@ module.exports = {
           'sass-loader',
         ],
       },
+      /** Babel **/
+      {},
     ],
   },
 };
