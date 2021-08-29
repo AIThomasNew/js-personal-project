@@ -82,17 +82,22 @@ module.exports = {
         test: /\.html$/,
         loader: 'html-loader',
       },
+
+
       /** CSS **/
       {
         test: /\.css$/,
         use: cssLoaders(),
       },
 
+
       /** SCSS **/
       {
         test: /\.(s[ac]ss)$/,
         use: cssLoaders('sass-loader'),
       },
+
+
       /** Pictures **/
       {
         test: /\.(?:|png|jpg|jpeg|svg|gif|ico)$/,
@@ -105,6 +110,8 @@ module.exports = {
           },
         ],
       },
+
+
       /** Fonts **/
       {
         test: /\.(?:|ttf|woff|woff2|eot)$/,
@@ -116,6 +123,19 @@ module.exports = {
             },
           },
         ],
+      },
+
+
+      /** Babel **/
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
       },
     ],
   },
