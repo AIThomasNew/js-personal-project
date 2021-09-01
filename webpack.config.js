@@ -1,8 +1,10 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const TerserWebpackPlugin = require('terser-webpack-plugin');
 
 const isDev = process.env.NODE_ENV === 'development';
 const isProd = !isDev;
@@ -12,6 +14,7 @@ const cssLoaders = (extra) => {
     {
       loader: MiniCssExtractPlugin.loader,
       options: {
+        hmr: isDev,
         reloadAll: true,
       },
     },
@@ -25,110 +28,83 @@ const cssLoaders = (extra) => {
   return loaders;
 };
 
-// const filename = (ext) =>
-//   isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`;
+const optimization = () => {
+  const config = {
+    splitChunks: {
+      chunks: 'all',
+    },
+  };
+
+  if (isProd) {
+    config.minimizer = [new CssMinimizerPlugin(), new TerserWebpackPlugin()];
+  }
+  return config;
+};
+
+const filename = (ext) => (isDev ? `[name]${ext}` : `[name].[hash].${ext}`);
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
     main: './js/index.js',
+    analytics: './js/analytics.js',
   },
   output: {
-    // filename: `./${filename('js')}`,
-    filename: '[name].[contenthash].js',
+    filename: filename('js'),
     path: path.resolve(__dirname, 'app'),
-    publicPath: '',
   },
-  resolve: {
-    extensions: ['.js', '.json', '.png', 'css', 'scss'],
-  },
+  // resolve: {
+  //   extensions: ['.js', '.json', '.png'],
+  // },
+  optimization: optimization(),
   devServer: {
-    historyApiFallback: true,
-    contentBase: path.resolve(__dirname, 'app'),
-    open: true,
-    compress: true,
-    hot: true,
-    port: 3000,
+    port: 4200,
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './index.html',
       minify: {
-        collapseWhitespace: true,
+        collapseWhitespace: isProd,
       },
     }),
     new CleanWebpackPlugin(),
-    // new MiniCssExtractPlugin({
-    //   filename: `./${filename('css')}`,
-    //   path: path.resolve(__dirname, 'app'),
-    // }),
-    new MiniCssExtractPlugin({
-      filename: '[name].[contenthash].css',
-    }),
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: path.resolve(__dirname, 'src/assets/'),
-          to: path.resolve(__dirname, 'app'),
+          from: path.resolve(__dirname, './src/favicon.ico'),
+          to: path.resolve(__dirname, 'app/favicon.ico'),
         },
       ],
+    }),
+    new MiniCssExtractPlugin({
+      filename: filename('css'),
     }),
   ],
   module: {
     rules: [
-      /** HTML **/
       {
-        test: /\.html$/,
+        test: /\.html$/i,
         loader: 'html-loader',
       },
-
-
-      /** CSS **/
       {
-        test: /\.css$/,
+        test: /\.css$/i,
         use: cssLoaders(),
       },
-
-
-      /** SCSS **/
       {
-        test: /\.(s[ac]ss)$/,
+        test: /\.(s[ac]ss)$/i,
         use: cssLoaders('sass-loader'),
       },
-
-
-      /** Pictures **/
       {
-        test: /\.(?:|png|jpg|jpeg|svg|gif|ico)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: `./assets/img/${filename('[ext]')}`,
-            },
-          },
-        ],
+        test: /\.(?:|png|jpg|jpeg|svg|gif|ico)$/i,
+        use: ['file-loader'],
       },
-
-
-      /** Fonts **/
       {
-        test: /\.(?:|ttf|woff|woff2|eot)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: `./assets/fonts/${filename('[ext]')}`,
-            },
-          },
-        ],
+        test: /\.(?:|ttf|woff|woff2|eot)$/i,
+        use: ['file-loader'],
       },
-
-
-      /** Babel **/
       {
-        test: /\.m?js$/,
+        test: /\.m?js$/i,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -136,6 +112,14 @@ module.exports = {
             presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.xml$/i,
+        use: ['xml-loader'],
+      },
+      {
+        test: /\.csv$/i,
+        use: ['csv-loader'],
       },
     ],
   },
