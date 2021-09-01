@@ -41,32 +41,36 @@ const optimization = () => {
   return config;
 };
 
-const filename = (ext) => (isDev ? `[name]${ext}` : `[name].[hash].${ext}`);
+const filename = (ext) => (isDev ? `[name].${ext}` : `[name].[hash].${ext}`);
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   mode: 'development',
   entry: {
-    main: './js/index.js',
+    main: ['@babel/polyfill', './js/index.js'],
     analytics: './js/analytics.js',
   },
   output: {
-    filename: filename('js'),
+    filename: `./js/${filename('js')}`,
     path: path.resolve(__dirname, 'app'),
   },
-  // resolve: {
-  //   extensions: ['.js', '.json', '.png'],
-  // },
+  resolve: {
+    extensions: ['.js', '.json', '.png'],
+  },
   optimization: optimization(),
   devServer: {
     port: 4200,
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: path.resolve(__dirname, 'src/index.html'),
+      filename: 'index.html',
       minify: {
         collapseWhitespace: isProd,
       },
+    }),
+    new MiniCssExtractPlugin({
+      filename: `./css/${filename('css')}`,
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
@@ -77,10 +81,8 @@ module.exports = {
         },
       ],
     }),
-    new MiniCssExtractPlugin({
-      filename: filename('css'),
-    }),
   ],
+
   module: {
     rules: [
       {
@@ -104,22 +106,23 @@ module.exports = {
         use: ['file-loader'],
       },
       {
-        test: /\.m?js$/i,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env'],
-          },
-        },
-      },
-      {
         test: /\.xml$/i,
         use: ['xml-loader'],
       },
       {
         test: /\.csv$/i,
         use: ['csv-loader'],
+      },
+      {
+        test: /\.m?js$/i,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+            plugins: ['@babel/plugin-proposal-class-properties'],
+          },
+        },
       },
     ],
   },

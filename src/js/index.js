@@ -10,7 +10,7 @@ import './function/base.js';
 
 import '../styles/scss/1-style.scss';
 import '../styles/css/1-style.css';
-import '../index.html';
+import './babel.js';
 
 $('pre').addClass('code').html(post.toString);
 
