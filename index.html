@@ -4,23 +4,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+    </style>
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
-    </style>
-    <link rel="stylesheet" href="./styles/css/1-style.css" />
-    <title>ITOM</title>
+    <link rel="stylesheet" href="./styles/css/style.css" />
+    <title>Цифровой ремесленник</title>
   </head>
-
   <body>
     <div class="container">
+      <!-- ШАПКА -->
       <header class="head">
         <div class="menu">
           <div class="logo">
-            <a href="./index.html" id="btn-logo">Thomas Code</a>
+            <a href="./index.html" id="btn-logo">Цифровой ремесленник</a>
           </div>
           <div class="nav">
             <a class="nav-links" href="#">Обо мне</a>
@@ -40,8 +40,9 @@
           </div>
         </div>
       </header>
-
+      <!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
       <main class="main-layout">
+        <!-- ГЛАВНАЯ -->
         <section id="about">
           <div class="animbox">
             <div class="anim3D">
@@ -80,8 +81,7 @@
                 <h2>Добро пожаловать!</h2>
                 <p>
                   Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я
-                  занимаюсь созданием сайтов, сервисов и поддерживаю своих
-                  постоянных клиентов!
+                  помогаю вашему бизнесу выглядеть лучше!
                 </p>
                 <a href="#" class="btn-order2">
                   <span></span>
@@ -94,7 +94,7 @@
             </div>
           </div>
         </section>
-
+        <!-- ВТОРОЙ - ГАДЖЕТЫ -->
         <section id="gadget">
           <div class="gadgetWrapper">
             <div class="gg-content1">
@@ -115,7 +115,7 @@
             </div>
           </div>
         </section>
-
+        <!-- ПРЕИМУЩЕСТВА -->
         <section id="forClient">
           <div class="forClient-wrapper">
             <div class="FC-content1">
@@ -248,7 +248,7 @@
             </div>
           </div>
         </section>
-
+        <!-- УСЛУГИ -->
         <section id="prices">
           <div class="prices-wrapper">
             <img class="bg-png1" src="./img/1.png" alt="" />
@@ -290,7 +290,7 @@
             <img class="bg-png2" src="./img/2.png" alt="" />
           </div>
         </section>
-
+        <!-- ПОРТФОЛИО -->
         <section id="portfolio">
           <div class="portfolioWrapper">
             <div class="portfolio-head">
@@ -324,262 +324,264 @@
             </div>
           </div>
         </section>
-
-        <div id="feedback">
-          <h2>ОТЗЫВЫ КЛИЕНТОВ</h2>
-        </div>
-
-        <div class="swiper-container mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
+        <!-- ОТЗЫВЫ -->
+        <div class="feedback" id="feedback">
+          <div class="feedback__header">
+            <div class="feedback__header__p1"><p></p></div>
+            <h1 class="feedback__header__h1">ОТЗЫВЫ КЛИЕНТОВ</h1>
+          </div>
+          <div class="swiper mySwiper">
+            <!-- СЛАЙДЫ -->
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
                 </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
-                </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
                 </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
-                </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
                 </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
-                </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="content">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  fill="currentColor"
-                  class="bi bi-chat-quote-fill"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
-                  />
-                </svg>
-              </div>
-              <div>
-                <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-                  eveniet distinctio fugiat, illum praesentium impedit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit. Lorem
-                  ipsum dolor sit, amet consectetur adipisicing elit.
-                </p>
-              </div>
-              <div class="fb-text">
-                <div class="client-photo">
-                  <img src="./img/ava.png" alt="" />
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
                 </div>
-                <div class="client-text">
-                  <ul>
-                    <li class="client-name">Someone Famous</li>
-                    <li class="client-prof">Creative Designer</li>
-                  </ul>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="content">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chat-quote-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Eius eveniet distinctio fugiat, illum praesentium impedit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  </p>
+                </div>
+                <div class="fb-text">
+                  <div class="client-photo">
+                    <img src="./img/ava.png" alt="" />
+                  </div>
+                  <div class="client-text">
+                    <ul>
+                      <li class="client-name">Someone Famous</li>
+                      <li class="client-prof">Creative Designer</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
         </div>
-
+        <!-- ДОПОЛНИТЕЛЬНО -->
         <section id="addit">
           <div class="addit-wrap">
             <div class="addit-text">
@@ -656,7 +658,7 @@
           </div>
         </section>
       </main>
-
+      <!-- ПОДВАЛ -->
       <footer class="footer-layout">
         <div>
           <p>© 2021 Thomas Code</p>
@@ -763,33 +765,25 @@
           </ul>
         </section>
 
-        <section class="footer-list">
-          <!-- <p>Список</p>
-          <ul>
-            <a href="#"><li>Раз</li></a>
-            <a href="#"><li>Два</li></a>
-            <a href="#"><li>Три</li></a>
-            <a href="#"><li>Три</li></a>
-            <a href="#"><li>Четыре</li></a>
-          </ul> -->
-        </section>
+        <section class="footer-list"></section>
       </footer>
     </div>
-
-
     <!-- СКРИПТЫ -->
+    <!-- библиотеки -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/lib/VanillaTilt.js"></script>
+    <script src="./js/lib/jquery.js"></script>
+    <!-- анимации -->
     <script src="./js/animation/transition-anim.js"></script>
     <script src="./js/animation/observer-anim.js"></script>
-    <!-- <script src="./js/animation/vanilla-anim.js"></script> -->
     <script src="./js/animation/swiper-anim.js"></script>
-
+    <!-- функционал -->
     <script src="./js/function/order-modal.js"></script>
     <script src="./js/function/base-modal.js"></script>
     <script src="./js/function/jsx-modal.js"></script>
     <script src="./js/function/btn-modal.js"></script>
-    <script src="./js/lib/VanillaTilt.js"></script>
-    <!-- <script src="./js/lib/jquery.js"></script> -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- другие скрипты -->
     <script>
       VanillaTilt.init(document.querySelectorAll('.card'), {
         max: 25,

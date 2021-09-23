@@ -1,4 +1,4 @@
-swiper = new Swiper('.mySwiper', {
+let swiper = new Swiper('.mySwiper', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -10,5 +10,7 @@ swiper = new Swiper('.mySwiper', {
     modifier: 2,
     slideShadows: true,
   },
-  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
 });
