@@ -74,7 +74,7 @@ body {
 
 .main-layout {
   display: grid;
-  grid-template-rows: 880px 700px 900px 850px 700px 700px 500px;
+  grid-template-rows: 880px 700px 900px 850px 700px 750px 500px;
   padding-top: 60px;
   min-height: auto;
   font-family: Commissioner, sans-serif;
@@ -98,29 +98,27 @@ body {
 //   max-height: 800px;
 // }
 
-//? ШАПКА ----------------------------------------------------//
+//? ШАПКА -------------------------------------------------------------------//
 
-.head {
+.header {
   display: flex;
   justify-content: center;
   position: fixed;
-  height: 60px;
+  height: 80px;
   width: 100%;
   background-color: #10151b;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   z-index: 99;
 }
-.menu {
+.header-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 100%;
   width: 100%;
-  .nav {
-    width: 600px;
-  }
   z-index: 100;
 }
+// ЛОГО
 .logo {
   #btn-logo {
     display: inline-flex;
@@ -131,16 +129,22 @@ body {
     color: white;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 550;
-    width: 200px;
-    height: 50px;
+    width: 450px;
+    height: 60px;
     transition: all ease 500ms;
   }
   #btn-logo:hover {
     cursor: pointer;
     color: white;
   }
+}
+// НАВИГАЦИЯ
+.nav-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .nav {
   display: flex;
@@ -149,11 +153,10 @@ body {
   height: 27px;
   width: 400px;
   font-family: 'Commissioner', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-}
-button:focus {
-  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  width: 500px;
+  margin: 0px 10px 0px 0px;
 }
 .nav-links {
   color: #fff;
@@ -166,19 +169,20 @@ button:focus {
   color: #0673e6;
   transition: 500ms;
 }
+// КНОПКА ЗАКАЗАТЬ
 .btn-order {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 130px;
-  height: 35px;
+  width: 170px;
+  height: 43px;
   border-radius: 5px;
   background-color: #0673e6;
   font-family: 'Commissioner', sans-serif;
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
   overflow: hidden;
@@ -186,7 +190,6 @@ button:focus {
 }
 .btn-order:hover {
   cursor: pointer;
-  transition: 0.3s;
   box-shadow: 0 0 15px #fff, 0 0 20px #fff;
   background-color: #fff;
   color: black;
@@ -199,8 +202,11 @@ button:focus {
   position: absolute;
   display: block;
 }
+button:focus {
+  outline: none;
+}
 
-//? ГЛАВНАЯ ----------------------------------------------------//
+//? ГЛАВНАЯ ---------------------------------------------------------------//
 
 #about {
   display: flex;
@@ -359,7 +365,7 @@ button:focus {
   }
 }
 
-//? ВТОРАЯ - ГАДЖЕТЫ ------------------------------------------//
+//? ВТОРАЯ - ГАДЖЕТЫ --------------------------------------------------------//
 
 #gadget {
   display: flex;
@@ -402,7 +408,7 @@ button:focus {
   justify-content: flex-end;
 }
 
-//? ОПИСАНИЕ ПРЕИМУЩЕСТВ --------------------------------------//
+//? ОПИСАНИЕ ПРЕИМУЩЕСТВ -----------------------------------------------------//
 
 #forClient {
   display: flex;
@@ -492,7 +498,7 @@ button:focus {
   border: 5px solid #0673e6;
 }
 
-//? УСЛУГИ ---------------------------------------------------//
+//? УСЛУГИ --------------------------------------------------------------------//
 
 #prices {
   display: flex;
@@ -572,7 +578,7 @@ button:focus {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-//? ПОРТФОЛИО ---------------------------------------------------//
+//? ПОРТФОЛИО -----------------------------------------------------------------//
 
 #portfolio {
   display: flex;
@@ -641,7 +647,8 @@ button:focus {
   height: 0;
 }
 
-//? ОТЗЫВЫ -----------------------------------------------------//
+//? ОТЗЫВЫ --------------------------------------------------------------------//
+
 .feedback {
   display: flex;
   flex-direction: column;
@@ -652,7 +659,12 @@ button:focus {
   padding: 0;
   min-width: 0;
 }
-.feedback__header__h1 {
+.feedback__header__p {
+  height: 40px;
+  background: linear-gradient(-90deg, #142272, #0673e6);
+
+}
+.feedback__header__h {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -752,7 +764,7 @@ li {
   }
 }
 
-//? ДОПОЛНИТЕЛЬНО ---------------------------------------------//
+//? ДОПОЛНИТЕЛЬНО ------------------------------------------------------------//
 
 #addit {
   display: flex;
@@ -792,7 +804,7 @@ li {
   height: 350px;
 }
 
-//? ПОДВАЛ ---------------------------------------------------//
+//? ПОДВАЛ -------------------------------------------------------------------//
 
 .footer-layout {
   margin-top: -200px;
@@ -869,7 +881,7 @@ li {
   width: 150px;
 }
 
-//? МОДАЛЬНОЕ ОКНО -------------------------------------------//
+//? МОДАЛЬНОЕ ОКНО ------------------------------------------------------------//
 
 .modal-block {
   padding: 0;
@@ -890,7 +902,7 @@ li {
   opacity: 0;
   z-index: -1;
 }
-//--------------------------------------
+//-------------------------
 .modal-wrap {
   position: fixed;
   top: 0;
@@ -1039,4 +1051,16 @@ li {
 #submit-order:hover {
   background-color: #067eff;
   transition: 0.3s;
+}
+
+//? ПЛАВНОЕ ПОЯВЛЕНИЕ -------------------------------------------------------//
+
+.feedback__header__h1 {
+  transform: translate(0px, 140%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.feedback__header__h1._active {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }

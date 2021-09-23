@@ -1,26 +1,26 @@
-const animItems = document.querySelectorAll('._anim-items');
+const animTexts = document.querySelectorAll('._anim_text');
 
-if (animItems.length > 0) {
+if (animTexts.length > 0) {
   window.addEventListener('scroll', animOnScroll);
   function animOnScroll() {
-    for (let index = 0; index < animItems.length; index++) {
-      const animItem = animItems[index];
-      const animItemHeight = animItem.offsetHeight;
-      const animItemOffset = offset(animItem).top;
+    for (let index = 0; index < animTexts.length; index++) {
+      const animText = animTexts[index];
+      const animTextHeight = animText.offsetHeight;
+      const animTextOffset = offset(animText).top;
       const animStart = 4;
 
-      let animItemPoint = window.innerHeight - animItemHeight / animStart;
-      if (animItemHeight > window.innerHeight) {
-        animItemPoint = window.innerHeight - window.innerHeight / animStart;
+      let animTextPoint = window.innerHeight - animTextHeight / animStart;
+      if (animTextHeight > window.innerHeight) {
+        animTextPoint = window.innerHeight - window.innerHeight / animStart;
       }
 
       if (
-        pageYOffset > animItemOffset - animItemPoint &&
-        pageYOffset < animItemOffset + animItemHeight
+        pageYOffset > animTextOffset - animTextPoint &&
+        pageYOffset < animTextOffset + animTextHeight
       ) {
-        animItem.classList.add('_active');
+        animText.classList.add('_active');
       } else {
-        animItem.classList.remove('_active');
+        animText.classList.remove('_active');
       }
     }
   }

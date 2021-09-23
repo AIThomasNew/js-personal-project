@@ -17,26 +17,28 @@
   <body>
     <div class="container">
       <!-- ШАПКА -->
-      <header class="head">
-        <div class="menu">
+      <header class="header">
+        <div class="header-container">
           <div class="logo">
             <a href="./index.html" id="btn-logo">Цифровой ремесленник</a>
           </div>
-          <div class="nav">
-            <a class="nav-links" href="#">Обо мне</a>
-            <a class="nav-links" href="#prices">Услуги</a>
-            <a class="nav-links" href="#">Портфолио</a>
-            <a class="nav-links" href="#feedback">Отзывы</a>
-            <a class="nav-links" href="#contact">Контакты</a>
-          </div>
-          <div>
-            <a href="#" class="btn-order">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Заказ
-            </a>
+          <div class="nav-block">
+            <div class="nav">
+              <a class="nav-links" href="#about">ОБО МНЕ</a>
+              <a class="nav-links" href="#prices">УСЛУГИ</a>
+              <a class="nav-links" href="#portfolio">ПОРТФОЛИО</a>
+              <a class="nav-links" href="#feedback">ОТЗЫВЫ</a>
+              <a class="nav-links" href="#contact">КОНТАКТЫ</a>
+            </div>
+            <div>
+              <a href="#" class="btn-order">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                ЗАКАЗАТЬ
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -291,7 +293,7 @@
           </div>
         </section>
         <!-- ПОРТФОЛИО -->
-        <section id="portfolio">
+        <section id="portfolio" id="#portfolio">
           <div class="portfolioWrapper">
             <div class="portfolio-head">
               <h2>Портфолио в процессе создания :)</h2>
@@ -327,8 +329,12 @@
         <!-- ОТЗЫВЫ -->
         <div class="feedback" id="feedback">
           <div class="feedback__header">
-            <div class="feedback__header__p1"><p></p></div>
-            <h1 class="feedback__header__h1">ОТЗЫВЫ КЛИЕНТОВ</h1>
+            <div class="feedback__header__p">
+              <p class="feedback__header__p1"></p>
+            </div>
+            <div class="feedback__header__h">
+              <h1 class="feedback__header__h1 _anim_text">ОТЗЫВЫ КЛИЕНТОВ</h1>
+            </div>
           </div>
           <div class="swiper mySwiper">
             <!-- СЛАЙДЫ -->
@@ -782,9 +788,8 @@
     <script src="./js/function/base-modal.js"></script>
     <script src="./js/function/jsx-modal.js"></script>
     <script src="./js/function/btn-modal.js"></script>
-
-    <!-- другие скрипты -->
-    <script>
+    <!-- доп. скрипт -->
+    <script type="text/javascript">
       VanillaTilt.init(document.querySelectorAll('.card'), {
         max: 25,
         speed: 400,
