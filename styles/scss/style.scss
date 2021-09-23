@@ -694,7 +694,7 @@ button:focus {
   border-radius: 10px;
   box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
   text-align: justify;
-  background-color: #badff8;
+  background-color: #d0e9fa;
   filter: blur(4px);
   p {
     padding-top: 5px;
@@ -737,10 +737,10 @@ li {
   object-fit: cover;
   max-width: 100%;
 }
-.swiper-container-3d .swiper-slide-shadow-left {
+.swiper-3d .swiper-slide-shadow-left {
   background-image: none;
 }
-.swiper-container-3d .swiper-slide-shadow-right {
+.swiper-3d .swiper-slide-shadow-right {
   background-image: none;
 }
 .content {

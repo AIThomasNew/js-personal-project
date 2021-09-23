@@ -10,7 +10,9 @@ let swiper = new Swiper('.mySwiper', {
     modifier: 2,
     slideShadows: true,
   },
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  loop: true,
 });
+
+// pagination: {
+//   el: '.swiper-pagination',
+// },
