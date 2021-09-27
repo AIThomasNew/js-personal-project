@@ -41,7 +41,7 @@ function init() {
 
   new RGBELoader()
     .setPath('img/texture/')
-    .load('christmas_photo_studio_04_4k.hdr', function (hdrmap) {
+    .load('img10.hdr', function (hdrmap) {
       let envmap = envmaploader.fromCubemap(hdrmap);
       let texture = new THREE.CanvasTexture(new FlakesTexture());
       texture.wrapS = THREE.RepeatWrapping;
