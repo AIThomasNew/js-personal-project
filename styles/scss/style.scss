@@ -31,6 +31,7 @@ h6 {
 html,
 body {
   // font-family: 'Commissioner', sans-serif;
+  // font-family: 'Poppins';
   height: 100%;
   line-height: 1;
   font-size: 16px;
@@ -74,7 +75,7 @@ body {
 
 .main-layout {
   display: grid;
-  grid-template-rows: 880px 700px 900px 850px 700px 750px 500px;
+  grid-template-rows: 900px 880px 700px 900px 850px 700px 750px 500px;
   padding-top: 60px;
   min-height: auto;
   font-family: Commissioner, sans-serif;
@@ -204,6 +205,17 @@ body {
 }
 button:focus {
   outline: none;
+}
+
+//? 3D АНИМАЦИЯ -----------------------------------------------------------//
+
+.animationSphere {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: radial-gradient(#292929, #10151b);
+  // background-color: #10151b;
+  overflow: hidden;
 }
 
 //? ГЛАВНАЯ ---------------------------------------------------------------//
@@ -662,7 +674,6 @@ button:focus {
 .feedback__header__p {
   height: 40px;
   background: linear-gradient(-90deg, #142272, #0673e6);
-
 }
 .feedback__header__h {
   display: flex;
