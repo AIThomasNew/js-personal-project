@@ -15,23 +15,23 @@
     <title>Цифровой ремесленник</title>
   </head>
   <body>
-    <div class="container">
+    <div class="wrapper">
       <!-- ШАПКА -->
       <header class="header">
         <div class="header-container">
-          <div class="logo">
+          <div class="header__logo">
             <a href="./index.html" id="btn-logo">Цифровой ремесленник</a>
           </div>
-          <div class="nav-block">
-            <div class="nav">
-              <a class="nav-links" href="#about">ОБО МНЕ</a>
-              <a class="nav-links" href="#prices">УСЛУГИ</a>
-              <a class="nav-links" href="#portfolio">ПОРТФОЛИО</a>
-              <a class="nav-links" href="#feedback">ОТЗЫВЫ</a>
-              <a class="nav-links" href="#contact">КОНТАКТЫ</a>
+          <div class="header__menu">
+            <div class="menu__nav">
+              <a class="nav__nav-links" href="#about">ОБО МНЕ</a>
+              <a class="nav__nav-links" href="#prices">УСЛУГИ</a>
+              <a class="nav__nav-links" href="#portfolio">ПОРТФОЛИО</a>
+              <a class="nav__nav-links" href="#feedback">ОТЗЫВЫ</a>
+              <a class="nav__nav-links" href="#contact">КОНТАКТЫ</a>
             </div>
-            <div>
-              <a href="#" class="btn-order">
+            <div class="menu__btn">
+              <a href="#" class="btn__btn-order">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -43,45 +43,31 @@
         </div>
       </header>
       <!-- ОСНОВНАЯ ИНФОРМАЦИЯ -->
-      <main class="main-layout">
+      <main class="page">
         <!-- ГЛАВНАЯ -->
-        <section class="animationSphere"></section>
-
+        <div class="page__sphere">
+          <div class="sphere__h1"><h1>Сайт - это лицо вашего бизнеса</h1></div>
+          <canvas class="webgl"></canvas>
+          <!-- <section>
+                  <h2>Вебсайт - это лицо вашего бизнеса.</h2>
+                  <p>
+                  Чем лучше его функциональность и дизайн, тем большую
+                  лояльность он способен вызвать у ваших клиентов, а
+                  следовательно станет больше довольных и счастливых людей на
+                  планете.
+                  </p>
+              </section> -->
+        </div>
         <!-- ОБО МНЕ -->
-        <section id="about">
-          <div class="animbox">
-            <div class="anim3D">
-              <svg class="animSvg">
-                <filter id="gooey">
-                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
-                  <feColorMatrix
-                    values="
-                    1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10"
-                  ></feColorMatrix>
-                </filter>
-              </svg>
-              <span style="--i: 1"></span>
-              <span style="--i: 2"></span>
-              <span style="--i: 3"></span>
-              <span style="--i: 4"></span>
-              <span style="--i: 5"></span>
-              <span style="--i: 6"></span>
-              <span style="--i: 7"></span>
-              <span style="--i: 8"></span>
-              <span class="rotate" style="--j: 0"></span>
-              <span class="rotate" style="--j: 1"></span>
-              <span class="rotate" style="--j: 2"></span>
-              <span class="rotate" style="--j: 3"></span>
-              <span class="rotate" style="--j: 4"></span>
-            </div>
-          </div>
-          <div class="myInfo">
-            <div class="myInfo1">
+        <div class="page__about">
+          <!-- контейнер профиля -->
+          <div class="about__info">
+            <div class="info__photo">
               <div class="photobox">
                 <img class="myphoto" src="./img/ava.png" alt="" />
               </div>
             </div>
-            <div class="myInfo2">
+            <div class="info__text">
               <div class="infobox">
                 <h2>Добро пожаловать!</h2>
                 <p>
@@ -98,44 +84,112 @@
               </div>
             </div>
           </div>
-        </section>
-        <!-- ВТОРОЙ - ГАДЖЕТЫ -->
-        <section id="gadget">
-          <div class="gadgetWrapper">
-            <div class="gg-content1">
-              <div class="gg-box1">
-                <h2>Вебсайт - это лицо вашего бизнеса.</h2>
+        </div>
+        <!-- ГАДЖЕТЫ -->
+        <div class="page__gadget">
+          <div class="gadget__container">
+            <div class="addit-text">
+              <div class="addit-box">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-heart-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                    />
+                  </svg>
+                </div>
+                <h2>Креативный подход</h2>
                 <p>
-                  Чем лучше его функциональность и дизайн, тем большую
-                  лояльность он способен вызвать у ваших клиентов, а
-                  следовательно станет больше довольных и счастливых людей на
-                  планете.
+                  Ваш сайт обязан выражать душу вашего бизнеса. Дополнительные
+                  фишки притягивают больше внимания, подсаживают пользователя на
+                  вашу волну и удерживают его.
+                </p>
+              </div>
+              <div class="addit-box">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-award-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
+                    />
+                    <path
+                      d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
+                    />
+                  </svg>
+                </div>
+                <h2>Стремление к лучшему</h2>
+                <p>
+                  Любая ваша текущая стадия развития - не предел. Самый ценный
+                  ресурс человека - это его время.
+                </p>
+              </div>
+              <div class="addit-box">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-currency-dollar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"
+                    />
+                  </svg>
+                </div>
+                <h2>Эквивалент</h2>
+                <p>
+                  Если и платить за что-то, то только за равноценный продукт,
+                  отвечающий современным тенденциям в быстро развивающемся
+                  обществе.
                 </p>
               </div>
             </div>
-            <div class="gg-content2">
+            <div class="gadget__img">
               <div>
-                <img class="gg-box2" src="./img/display.png" alt="" />
+                <img class="gadget__img__box" src="./img/display.png" alt="" />
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- ПРЕИМУЩЕСТВА -->
-        <section id="forClient">
-          <div class="forClient-wrapper">
-            <div class="FC-content1">
+        <div class="page__skills">
+          <div class="page__skills__container">
+            <div class="page__skills__header">
               <h2>Чем я могу помочь ?</h2>
             </div>
-            <div class="FC-content2">
-              <div class="FC-box">
-                <div class="eye">
-                  <div class="eyeAnim">
-                    <!-- <div class="pupil"></div> -->
-                  </div>
-                  <div class="eyeAnim">
-                    <!-- <div class="pupil"></div> -->
-                  </div>
-                </div>
+            <div class="page__skills__main">
+              <div class="skills__main-box">
+                <svg
+                  class="paddSvg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-layout-text-window-reverse"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
+                  />
+                  <path
+                    d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"
+                  />
+                </svg>
                 <h3>Аналитика</h3>
                 <p>
                   Изучаю ваш бизнес. Знакомлюсь со всем предоставленным мне
@@ -143,7 +197,7 @@
                   глубокого понимания и планирования.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="skills__main-box">
                 <svg
                   class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -166,7 +220,7 @@
                   Вам больше не надо искать дизайнера.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="skills__main-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -186,7 +240,7 @@
                   моего клиента. Этапы создания.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="skills__main-box">
                 <svg
                   class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -207,7 +261,7 @@
                   как адаптивность под все устройства и анимации.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="skills__main-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -227,7 +281,7 @@
                   панели управления, передача управления сайтом в ваши руки.
                 </p>
               </div>
-              <div class="FC-box">
+              <div class="skills__main-box">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -252,56 +306,69 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- УСЛУГИ -->
-        <section id="prices">
-          <div class="prices-wrapper">
+        <div class="page__prices">
+          <div class="prices-container">
             <img class="bg-png1" src="./img/1.png" alt="" />
 
-            <div class="prices-wrap">
+            <div class="prices-cards">
               <div class="card">
                 <div class="card-content">
-                  <h3>Лендинг</h3>
-                  <p>
-                    Одностраничный сайт. Сайт-визитка создается за такую же
-                    цену.
-                  </p>
-                  <a href="#">Заказать</a>
+                  <div class="card-content__header"><h3>Лендинг</h3></div>
+                  <div class="card-content__main">
+                    <p>
+                      Одностраничный сайт, включающий в себя один или несколько
+                      разделов идущих друг за другом со всем необходимым
+                      контентом. Подходит для быстрой продажи услуг.
+                    </p>
+                  </div>
+                  <div class="card-content__footer">
+                    <a href="#">от 12 000 рублей</a>
+                  </div>
                 </div>
               </div>
               <div class="card">
                 <div class="card-content">
-                  <h3>Бизнес-сайт</h3>
-                  <p>
-                    Полное создание и оформление с различными анмиациями. Плюс
-                    функцониал, регистрация домена, и запуск на хостинг.
-                  </p>
-                  <a href="#">Заказать</a>
+                  <div class="card-content__header"><h3>Большой</h3></div>
+                  <div class="card-content__main">
+                    <p>
+                      Многостраничный сайт со множеством разделов и большой
+                      функциональностью. Подойдёт вам если вы хотите запустить
+                      интернет магазин, новостной портал или социальную сеть.
+                    </p>
+                  </div>
+                  <div class="card-content__footer">
+                    <a href="#">от 30 000 рублей</a>
+                  </div>
                 </div>
               </div>
               <div class="card">
                 <div class="card-content">
-                  <h3>Премиум</h3>
-                  <p>
-                    Сайт подключ, пять вариантов логотипа на выбор, полный
-                    фирменный стиль для вашего бренда, консультация по
-                    использованию стиля.
-                  </p>
-                  <a href="#">Заказать</a>
+                  <div class="card-content__header"><h3>Премиум</h3></div>
+                  <div class="card-content__main">
+                    <p>
+                      Разработка фирменного стиля и многостраничного сайта для
+                      вашего бизнеса. Логотип, макеты, дизайн, вёрстка, запуск.
+                    </p>
+                  </div>
+                  <div class="card-content__footer">
+                    <a href="#">от 45 000 рублей</a>
+                  </div>
                 </div>
               </div>
             </div>
 
             <img class="bg-png2" src="./img/2.png" alt="" />
           </div>
-        </section>
+        </div>
         <!-- ПОРТФОЛИО -->
-        <section id="portfolio" id="#portfolio">
-          <div class="portfolioWrapper">
-            <div class="portfolio-head">
+        <div class="portfolio">
+          <div class="portfolio__container">
+            <div class="portfolio-header">
               <h2>Портфолио в процессе создания :)</h2>
             </div>
-            <div class="animbox">
+            <div class="portfolio-main">
               <div class="anim3D">
                 <svg class="animSvg">
                   <filter id="gooey">
@@ -328,7 +395,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- ОТЗЫВЫ -->
         <div class="feedback" id="feedback">
           <div class="feedback__header">
@@ -359,15 +426,12 @@
                 </div>
                 <div>
                   <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Eius eveniet distinctio fugiat, illum praesentium impedit.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Редко бывает такое когда человек понимает тебя с пол слова. Томас отлично выполнил свою работу! Быстро, профессионально и корректно! Часто созванивались, на все вопросы давал исчерпывающие ответы. Порадовало полностью прозрачное сотрудничество. Рекомендую всем!
                   </p>
                 </div>
                 <div class="fb-text">
                   <div class="client-photo">
-                    <img src="./img/ava.png" alt="" />
+                    <img src="./img/clients/SoberDriver.jpg" alt="" />
                   </div>
                   <div class="client-text">
                     <ul>
@@ -590,91 +654,14 @@
             </div>
           </div>
         </div>
-        <!-- ДОПОЛНИТЕЛЬНО -->
-        <section id="addit">
-          <div class="addit-wrap">
-            <div class="addit-text">
-              <div class="addit-box">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-heart-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                    />
-                  </svg>
-                </div>
-                <h2>Креативный подход</h2>
-                <p>
-                  Ваш сайт обязан выражать душу вашего бизнеса. Дополнительные
-                  фишки притягивают больше внимания, подсаживают пользователя на
-                  вашу волну и удерживают его.
-                </p>
-              </div>
-              <div class="addit-box">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-award-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
-                    />
-                    <path
-                      d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
-                    />
-                  </svg>
-                </div>
-                <h2>Стремление к лучшему</h2>
-                <p>
-                  Любая ваша текущая стадия развития - не предел. Самый ценный
-                  ресурс человека - это его время.
-                </p>
-              </div>
-              <div class="addit-box">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-currency-dollar"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"
-                    />
-                  </svg>
-                </div>
-                <h2>Эквивалент</h2>
-                <p>
-                  Если и платить за что-то, то только за равноценный продукт,
-                  отвечающий современным тенденциям в быстро развивающемся
-                  обществе.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
-      <!-- ПОДВАЛ -->
-      <footer class="footer-layout">
-        <div>
-          <p>© 2021 Thomas Code</p>
-          <p>Все права защищены.</p>
-        </div>
 
-        <!-- <section id="contact">
+      <!-- ПОДВАЛ -->
+      <footer class="page__footer">
+        <div class="page__footer-header">
+
+        </div>
+        <div class="page__footer-main" id="contact">
           <ul class="list">
             <li class="list-icon">
               <a
@@ -690,7 +677,8 @@
                 >
                   <path
                     d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
-                  /></svg></a>
+                  /></svg
+              ></a>
             </li>
             <li class="list-icon">
               <a class="icon" href="https://www.linkedin.com/in/thomasneganov/"
@@ -704,7 +692,8 @@
                 >
                   <path
                     d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                  /></svg></a>
+                  /></svg
+              ></a>
             </li>
             <li class="list-icon">
               <a
@@ -720,7 +709,8 @@
                 >
                   <path
                     d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-                  /></svg></a>
+                  /></svg
+              ></a>
             </li>
             <li class="list-icon">
               <a class="icon" href="https://github.com/AIThomasNew"
@@ -734,7 +724,8 @@
                 >
                   <path
                     d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-                  /></svg></a>
+                  /></svg
+              ></a>
             </li>
             <li class="list-icon">
               <a class="icon" href="https://twitter.com/ThomasNeganov"
@@ -748,7 +739,8 @@
                 >
                   <path
                     d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
-                  /></svg></a>
+                  /></svg
+              ></a>
             </li>
             <li class="list-icon">
               <a class="icon" href="https://t.me/ThomasNeganov">
@@ -767,28 +759,28 @@
               </a>
             </li>
           </ul>
-        </section> -->
+        </div>
 
-        <section class="footer-list"></section>
+        <div class="page__footer-footer">
+          <p class="footer__p_1">© 2021 Цифровой ремесленник</p>
+          <p class="footer__p_2">Все права защищены.</p>
+        </div>
+
       </footer>
     </div>
+
     <!-- СКРИПТЫ -->
-    <!-- модули -->
     <script type="module" src="./js/index.js"></script>
-    <!-- библиотеки -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/lib/VanillaTilt.js"></script>
     <script src="./js/lib/jquery.js"></script>
-    <!-- анимации -->
     <script src="./js/animation/transition-anim.js"></script>
     <script src="./js/animation/observer-anim.js"></script>
     <script src="./js/animation/swiper-anim.js"></script>
-    <!-- функционал -->
     <script src="./js/function/order-modal.js"></script>
     <script src="./js/function/base-modal.js"></script>
     <script src="./js/function/jsx-modal.js"></script>
     <script src="./js/function/btn-modal.js"></script>
-    <!-- доп. скрипт -->
     <script type="text/javascript">
       VanillaTilt.init(document.querySelectorAll('.card'), {
         max: 25,

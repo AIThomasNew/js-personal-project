@@ -1,4 +1,4 @@
-//? ОБНУЛЕНИЕ ------------------------------------------------//
+// ОБНУЛЕНИЕ ------------------------------------------------------------------//
 
 *,
 *::before,
@@ -30,8 +30,7 @@ h6 {
 }
 html,
 body {
-  // font-family: 'Commissioner', sans-serif;
-  // font-family: 'Poppins';
+  font-family: Commissioner, sans-serif;
   height: 100%;
   line-height: 1;
   font-size: 16px;
@@ -39,25 +38,15 @@ body {
   scroll-behavior: smooth;
 }
 
-//? ОБЁРТКА -------------------------------------------------//
+// ОБЁРТКА ------------------------------------------------------------------//
 
-.container {
+.wrapper {
   display: grid;
   grid-template-rows: 100%;
+  // overflow: hidden;
 }
-// .wrapper {
-//   min-height: 100%;
-//   overflow: hidden;
-// }
 
-//? ТЕХНИЧЕСКИЕ КЛАССЫ --------------------------------------//
-
-// ._container {
-//   max-width: 1046px;
-//   padding: 0px 15px;
-//   margin: 0px auto;
-//   box-sizing: content-box;
-// }
+// ТЕХНИЧЕСКИЕ КЛАССЫ -------------------------------------------------------//
 
 // ._ibg {
 //   position: relative;
@@ -71,21 +60,20 @@ body {
 //   object-fit: cover;
 // }
 
-//? СТРАНИЦА --------------------------------------------------//
+// СТРАНИЦА -----------------------------------------------------------------//
 
-.main-layout {
-  display: grid;
-  grid-template-rows: 900px 880px 700px 900px 850px 700px 750px 500px;
+.page {
   padding-top: 60px;
-  min-height: auto;
-  font-family: Commissioner, sans-serif;
-  background-color: white;
   overflow: hidden;
+  min-height: auto;
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
-// .page__main-block {
-//   position: relative;
-// }
+.page__sphere {
+  position: relative;
+}
 // .page__questions {
 //   position: relative;
 //   max-width: 100%;
@@ -99,7 +87,7 @@ body {
 //   max-height: 800px;
 // }
 
-//? ШАПКА -------------------------------------------------------------------//
+// ШАПКА -------------------------------------------------------------------//
 
 .header {
   display: flex;
@@ -119,8 +107,7 @@ body {
   width: 100%;
   z-index: 100;
 }
-// ЛОГО
-.logo {
+.header__logo {
   #btn-logo {
     display: inline-flex;
     justify-content: center;
@@ -129,7 +116,7 @@ body {
     background-color: transparent;
     color: white;
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 30px;
     font-weight: 550;
     width: 450px;
@@ -141,37 +128,34 @@ body {
     color: white;
   }
 }
-// НАВИГАЦИЯ
-.nav-block {
+.header__menu {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.nav {
+.menu__nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 27px;
   width: 400px;
-  font-family: 'Commissioner', sans-serif;
   font-size: 15px;
   font-weight: 400;
   width: 500px;
   margin: 0px 10px 0px 0px;
 }
-.nav-links {
+.nav__nav-links {
   color: #fff;
   text-decoration: none;
   text-align: center;
   transition: 100ms;
 }
-.nav-links:hover {
+.nav__nav-links:hover {
   cursor: pointer;
   color: #0673e6;
   transition: 500ms;
 }
-// КНОПКА ЗАКАЗАТЬ
-.btn-order {
+.btn__btn-order {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -180,7 +164,7 @@ body {
   height: 43px;
   border-radius: 5px;
   background-color: #0673e6;
-  font-family: 'Commissioner', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -189,38 +173,57 @@ body {
   overflow: hidden;
   transition: 0.3s;
 }
-.btn-order:hover {
+.btn__btn-order:hover {
   cursor: pointer;
   box-shadow: 0 0 15px #fff, 0 0 20px #fff;
   background-color: #fff;
   color: black;
 }
-.btn-order:active {
+.btn__btn-order:active {
   background-color: darken($color: #fff, $amount: 20%);
   transition: 0.2s;
 }
-.btn-order span {
+.btn__btn-order span {
   position: absolute;
   display: block;
 }
-button:focus {
-  outline: none;
-}
 
-//? 3D АНИМАЦИЯ -----------------------------------------------------------//
+// 3D АНИМАЦИЯ -----------------------------------------------------------//
 
-.animationSphere {
-  width: 100vw;
-  height: 100vh;
+.page__sphere {
+  height: 800px;
   margin: 0;
+  display: grid;
+  place-items: center;
   background: radial-gradient(#292929, #10151b);
-  // background-color: #10151b;
   overflow: hidden;
+
+  border: 1px solid blue;
 }
 
-//? ГЛАВНАЯ ---------------------------------------------------------------//
+.webgl {
+  position: absolute;
+  top: 0;
+  left: 0;
+  outline: none;
+  mix-blend-mode: exclusion;
 
-#about {
+  border: 1px solid blue;
+}
+
+.sphere__h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgb(180, 179, 179);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 200;
+
+  border: 1px solid blue;
+}
+
+// ГЛАВНАЯ ---------------------------------------------------------------//
+
+.page__about {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
@@ -229,16 +232,16 @@ button:focus {
   padding-bottom: 100px;
   box-sizing: border-box;
 }
-.myInfo {
+.about__info {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 600px;
   width: 600px;
-  .myInfo1 {
+  .info__photo {
     padding: 20px;
   }
-  .myInfo2 {
+  .info__text {
     padding: 20px;
   }
 }
@@ -281,7 +284,7 @@ button:focus {
   height: 37px;
   border-radius: 5px;
   background-color: #0673e6;
-  font-family: 'Commissioner', sans-serif;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
@@ -377,58 +380,100 @@ button:focus {
   }
 }
 
-//? ВТОРАЯ - ГАДЖЕТЫ --------------------------------------------------------//
+// ВТОРАЯ - ГАДЖЕТЫ --------------------------------------------------------//
 
-#gadget {
+.page__gadget {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
+  background-color: rgb(223, 223, 223);
+  height: 800px;
 }
-.gadgetWrapper {
+.gadget__container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 955px;
   height: 600px;
 }
-.gg-box1 {
+.gadget__text__box {
   height: 50%;
   // height: 300px;
   width: 55%;
   // width: 550px;
 }
-.gg-box1 h2 {
+.gadget__text__box h2 {
   font-weight: 600;
   font-size: 3rem;
   padding-bottom: 20px;
 }
-.gg-box1 p {
+.gadget__text__box p {
   font-weight: 300;
   font-size: 1.5rem;
   // padding-bottom: 20px;
 }
-.gg-box2 {
+.gadget__img__box {
   height: 300px;
 }
-.gg-content1 {
+.gadget__text {
   display: flex;
   justify-content: flex-start;
 }
-.gg-content2 {
+.gadget__img {
   display: flex;
   justify-content: flex-end;
 }
 
-//? ОПИСАНИЕ ПРЕИМУЩЕСТВ -----------------------------------------------------//
+/////////////////////
+.addit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 223, 223);
+  overflow: hidden;
+  height: 600px;
+}
+.addit-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+}
+.addit-text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  svg {
+    width: 70px;
+    height: 70px;
+    padding-bottom: 10px;
+  }
+}
+.addit-box {
+  width: 280px;
+  overflow: hidden;
+}
+.addit-box h2 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.additImg {
+  height: 350px;
+}
 
-#forClient {
+// ОПИСАНИЕ ПРЕИМУЩЕСТВ -----------------------------------------------------//
+
+.page__skills {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #10151b;
+  height: 950px;
 }
-.forClient-wrapper {
+.page__skills__container {
   height: 100%;
   width: 100%;
   display: flex;
@@ -437,11 +482,11 @@ button:focus {
   align-items: center;
   color: #fff;
 }
-.forClient-wrapper h2 {
+.page__skills__header h2 {
   font-size: 3.2rem;
   font-weight: 300;
 }
-.FC-content2 {
+.page__skills__main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 58px;
@@ -449,7 +494,7 @@ button:focus {
   place-items: center;
   align-items: center;
 }
-.FC-box {
+.skills__main-box {
   width: 290px;
   height: 240px;
   display: flex;
@@ -460,66 +505,34 @@ button:focus {
   word-spacing: 1px;
 }
 
-// содержание блоков
-.FC-box svg {
+.skills__main-box svg {
   width: 70px;
   height: 70px;
   margin-bottom: 10px;
 }
-.FC-box h3 {
-  font-size: 1.4rem;
+.skills__main-box h3 {
+  font-size: 26px;
   font-weight: 500;
   padding-bottom: 5px;
   margin-bottom: 10px;
 }
-.FC-box p {
-  text-align: justify;
+.skills__main-box p {
+  // text-align: justify;
   padding: 0 15px 0 15px;
   font-weight: 300;
+  font-size: 18px;
 }
 
-// анимация
-.eye {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 120px;
-  height: 70px;
-  margin-bottom: 10px;
-}
-.eyeAnim {
-  position: relative;
-  display: block;
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
-  background-color: #fff;
-  border: 1px solid black;
-}
-.eye .eyeAnim::before {
-  content: '';
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 10px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: black;
-  border: 5px solid #0673e6;
-}
+// УСЛУГИ --------------------------------------------------------------------//
 
-//? УСЛУГИ --------------------------------------------------------------------//
-
-#prices {
+.page__prices {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #0673e6;
   overflow: hidden;
 }
-.prices-wrapper {
+.prices-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -534,7 +547,7 @@ button:focus {
   margin-left: 390px;
   margin-top: 90px;
 }
-.prices-wrap {
+.prices-cards {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -543,7 +556,7 @@ button:focus {
   z-index: 2;
   margin: 30px;
 }
-.prices-wrap .card {
+.prices-cards .card {
   z-index: 1;
   position: relative;
   width: 280px;
@@ -554,30 +567,41 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.1);
   overflow: hidden;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px);
 }
 .card-content {
-  padding: 20px;
-  display: grid;
-  grid-template-rows: 1fr 4fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
+  padding: 20px;
 }
-#prices .card .card-content h3 {
-  font-size: 2em;
+.card-content__header {
+  height: 50px;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 700;
   color: #fff;
   z-index: 1;
   text-align: center;
+  margin: 30px 0px 0px 0px;
 }
-#prices .card .card-content p {
-  font-size: 1.1em;
+.card-content__main {
+  padding: 0px 0px 0px 13px;
+  width: 100%;
+  font-size: 18px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
+  height: 150px;
+  margin: 30px 0px 0px 0px;
 }
-#prices .card .card-content a {
+.card-content__footer a {
+  width: 150px;
   display: inline-block;
   padding: 10px 20px;
   margin-top: 15px;
@@ -585,29 +609,31 @@ button:focus {
   background-color: #fff;
   color: #000;
   text-decoration: none;
+  text-align: center;
   border-radius: 20px;
   font-weight: 500;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-//? ПОРТФОЛИО -----------------------------------------------------------------//
+// ПОРТФОЛИО -----------------------------------------------------------------//
 
-#portfolio {
+.portfolio {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 500px;
 }
-.portfolioWrapper {
+.portfolio__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.portfolio-head h2 {
+.portfolio-header h2 {
   font-size: 3rem;
   font-weight: 200;
 }
-.animbox {
+.portfolio-main {
   height: 400px;
   width: 400px;
   display: flex;
@@ -659,20 +685,21 @@ button:focus {
   height: 0;
 }
 
-//? ОТЗЫВЫ --------------------------------------------------------------------//
+// ОТЗЫВЫ --------------------------------------------------------------------//
 
 .feedback {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 100%;
-  min-height: 100%;
+  // min-height: 100%;
+  height: 700px;
   margin: 0;
   padding: 0;
   min-width: 0;
 }
 .feedback__header__p {
-  height: 40px;
+  height: 30px;
   background: linear-gradient(-90deg, #142272, #0673e6);
 }
 .feedback__header__h {
@@ -775,63 +802,24 @@ li {
   }
 }
 
-//? ДОПОЛНИТЕЛЬНО ------------------------------------------------------------//
+// ПОДВАЛ -------------------------------------------------------------------//
 
-#addit {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(223, 223, 223);
-  overflow: hidden;
-}
-.addit-wrap {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  text-align: justify;
-}
-.addit-text {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 60px;
-  svg {
-    width: 70px;
-    height: 70px;
-    padding-bottom: 10px;
-  }
-}
-.addit-box {
-  width: 280px;
-  overflow: hidden;
-}
-.addit-box h2 {
-  padding-top: 10px;
-  padding-bottom: 15px;
-}
-.additImg {
-  height: 350px;
-}
-
-//? ПОДВАЛ -------------------------------------------------------------------//
-
-.footer-layout {
+.page__footer {
   margin-top: -200px;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
   height: 400px;
-  background-color: #10151b;
+  background: linear-gradient(-90deg, #142272, #0673e6);
   color: white;
   font-family: 'Commissioner', sans-serif;
   font-size: 19px;
   font-weight: 100;
   overflow: hidden;
 }
-#contact {
+.page__footer-main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -888,11 +876,19 @@ li {
 .icon:hover::before {
   transform: skewX(45deg) translateX(-150px);
 }
-.footer-list {
-  width: 150px;
+
+.page__footer-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-//? МОДАЛЬНОЕ ОКНО ------------------------------------------------------------//
+.footer__p_1 {
+  margin: 0px 0px 10px 0px;
+}
+
+// МОДАЛЬНОЕ ОКНО ------------------------------------------------------------//
 
 .modal-block {
   padding: 0;
@@ -1063,15 +1059,21 @@ li {
   background-color: #067eff;
   transition: 0.3s;
 }
+// .inputBox__input ._req {
+
+// }
+.inputBox__input ._error {
+  box-shadow: 0 0 15 red;
+}
 
 //? ПЛАВНОЕ ПОЯВЛЕНИЕ -------------------------------------------------------//
 
-.feedback__header__h1 {
-  transform: translate(0px, 140%);
-  opacity: 0;
-  transition: all 0.8s ease 0s;
-}
-.feedback__header__h1._active {
-  transform: translate(0px, 0px);
-  opacity: 1;
-}
+// .feedback__header__h1 {
+//   transform: translate(0px, 140%);
+//   opacity: 0;
+//   transition: all 0.8s ease 0s;
+// }
+// .feedback__header__h1._active {
+//   transform: translate(0px, 0px);
+//   opacity: 1;
+// }

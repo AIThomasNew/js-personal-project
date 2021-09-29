@@ -16,23 +16,23 @@ function _createModal(options) {
             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
           </svg></span>
         </div>
-        <div class="contactForm">
+        <div class="contactForm" id="form">
           <h2>Оформить заказ</h2>
           <div class="formBox">
             <div class="inputBox w50">
-              <input type="text" required />
+              <input type="text" required class="inputBox__input _req"/>
               <span>Имя</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" required />
+              <input type="text" required class="inputBox__input _req"/>
               <span>Фамилия</span>
             </div>
             <div class="inputBox w50">
-              <input type="email" required />
+              <input type="text" required class="inputBox__input _req _email"/>
               <span>Email</span>
             </div>
             <div class="inputBox w50">
-              <input type="text" required />
+              <input type="text" required class="inputBox__input _req"/>
               <span>Номер телефона</span>
             </div>
             <div class="inputBox w100">
@@ -40,7 +40,7 @@ function _createModal(options) {
               <span>Ваш комментарий...</span>
             </div>
             <div class="inputBox w100">
-              <input id="submit-order" type="submit" value="Заказать" />
+              <input id="submit-order" type="submit" value="Отправить" />
             </div>
           </div>
         </div>
