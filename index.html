@@ -48,33 +48,23 @@
         <div class="page__sphere">
           <div class="sphere__h1"><h1>Сайт - это лицо вашего бизнеса</h1></div>
           <canvas class="webgl"></canvas>
-          <!-- <section>
-                  <h2>Вебсайт - это лицо вашего бизнеса.</h2>
-                  <p>
-                  Чем лучше его функциональность и дизайн, тем большую
-                  лояльность он способен вызвать у ваших клиентов, а
-                  следовательно станет больше довольных и счастливых людей на
-                  планете.
-                  </p>
-              </section> -->
         </div>
         <!-- ОБО МНЕ -->
-        <div class="page__about">
-          <!-- контейнер профиля -->
-          <div class="about__info">
+        <div class="page__about" id="about">
+          <div class="about__info transition-animation _anim-text">
             <div class="info__photo">
-              <div class="photobox">
-                <img class="myphoto" src="./img/ava.png" alt="" />
+              <div class="photo-box">
+                <img class="my-photo" src="./img/ava.png" alt="" />
               </div>
             </div>
             <div class="info__text">
-              <div class="infobox">
+              <div class="text-box">
                 <h2>Добро пожаловать!</h2>
                 <p>
                   Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я
                   помогаю вашему бизнесу выглядеть лучше !
                 </p>
-                <a href="#" class="btn-order2">
+                <a href="#gadget" class="btn-order2">
                   <span></span>
                   <span></span>
                   <span></span>
@@ -86,76 +76,16 @@
           </div>
         </div>
         <!-- ГАДЖЕТЫ -->
-        <div class="page__gadget">
+        <div class="page__gadget" id="gadget">
           <div class="gadget__container">
-            <div class="addit-text">
-              <div class="addit-box">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-heart-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
-                    />
-                  </svg>
-                </div>
-                <h2>Креативный подход</h2>
+            <div class="gadget__text transition-animation _anim-text">
+              <div class="gadget__text__box">
+                <h2>Вебсайт - это лицо вашего бизнеса.</h2>
                 <p>
-                  Ваш сайт обязан выражать душу вашего бизнеса. Дополнительные
-                  фишки притягивают больше внимания, подсаживают пользователя на
-                  вашу волну и удерживают его.
-                </p>
-              </div>
-              <div class="addit-box">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-award-fill"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"
-                    />
-                    <path
-                      d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"
-                    />
-                  </svg>
-                </div>
-                <h2>Стремление к лучшему</h2>
-                <p>
-                  Любая ваша текущая стадия развития - не предел. Самый ценный
-                  ресурс человека - это его время.
-                </p>
-              </div>
-              <div class="addit-box">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-currency-dollar"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"
-                    />
-                  </svg>
-                </div>
-                <h2>Эквивалент</h2>
-                <p>
-                  Если и платить за что-то, то только за равноценный продукт,
-                  отвечающий современным тенденциям в быстро развивающемся
-                  обществе.
+                  Чем лучше его функциональность и дизайн, тем большую
+                  лояльность он способен вызвать у ваших клиентов, а
+                  следовательно станет больше довольных и счастливых людей на
+                  планете.
                 </p>
               </div>
             </div>
@@ -167,37 +97,35 @@
           </div>
         </div>
         <!-- ПРЕИМУЩЕСТВА -->
-        <div class="page__skills">
+        <div class="page__skills" id="skills">
           <div class="page__skills__container">
             <div class="page__skills__header">
-              <h2>Чем я могу помочь ?</h2>
+              <h2 class="skills__header transition-animation _anim-text">
+                Чем я могу помочь вам ?
+              </h2>
             </div>
             <div class="page__skills__main">
-              <div class="skills__main-box">
+              <div class="main-box transition-animation _anim-text">
                 <svg
-                  class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-layout-text-window-reverse"
+                  class="bi bi-hand-index-thumb"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"
-                  />
-                  <path
-                    d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"
+                    d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"
                   />
                 </svg>
                 <h3>Аналитика</h3>
                 <p>
-                  Изучаю ваш бизнес. Знакомлюсь со всем предоставленным мне
-                  материалом вашей идеи, а также с рынком конкурентов, для
-                  глубокого понимания и планирования.
+                  Изучаю ваш бизнес и весь предоставленный мне материал вашей
+                  идеи, а также с рынком конкурентов, для глубокого понимания и
+                  планирования.
                 </p>
               </div>
-              <div class="skills__main-box">
+              <div class="main-box transition-animation _anim-text">
                 <svg
                   class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
@@ -220,7 +148,7 @@
                   Вам больше не надо искать дизайнера.
                 </p>
               </div>
-              <div class="skills__main-box">
+              <div class="main-box transition-animation _anim-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -237,31 +165,32 @@
                 <p>
                   Создание веб-сайта с нуля при помощи вёрстки и языка
                   программирования дают возможность реализовать любые фантазии
-                  моего клиента. Этапы создания.
+                  моего клиента.
                 </p>
               </div>
-              <div class="skills__main-box">
+              <div class="main-box transition-animation _anim-text">
                 <svg
-                  class="paddSvg"
                   xmlns="http://www.w3.org/2000/svg"
-                  width="60"
-                  height="60"
+                  width="16"
+                  height="16"
                   fill="currentColor"
-                  class="bi bi-exclude"
+                  class="bi bi-gear"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm12 2H5a1 1 0 0 0-1 1v7h7a1 1 0 0 0 1-1V4z"
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"
+                  />
+                  <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"
                   />
                 </svg>
-                <h3>Функциональность</h3>
+                <h3>Функционал</h3>
                 <p>
                   Постоянное развитие позволяет мне использовать самые последние
-                  технологии в процессе создания вашего сайта. Например такие
-                  как адаптивность под все устройства и анимации.
+                  технологии в процессе создания вашего сайта.
                 </p>
               </div>
-              <div class="skills__main-box">
+              <div class="main-box transition-animation _anim-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -281,21 +210,21 @@
                   панели управления, передача управления сайтом в ваши руки.
                 </p>
               </div>
-              <div class="skills__main-box">
+              <div class="main-box transition-animation _anim-text">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   fill="currentColor"
-                  class="bi bi-person-check-fill"
+                  class="bi bi-person-check"
                   viewBox="0 0 16 16"
                 >
                   <path
-                    fill-rule="evenodd"
-                    d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                    d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
                   />
                   <path
-                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                    fill-rule="evenodd"
+                    d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
                   />
                 </svg>
                 <h3>Поддержка</h3>
@@ -308,12 +237,11 @@
           </div>
         </div>
         <!-- УСЛУГИ -->
-        <div class="page__prices">
+        <div class="page__prices" id="prices">
           <div class="prices-container">
             <img class="bg-png1" src="./img/1.png" alt="" />
-
             <div class="prices-cards">
-              <div class="card">
+              <div class="card transition-animation _anim-text">
                 <div class="card-content">
                   <div class="card-content__header"><h3>Лендинг</h3></div>
                   <div class="card-content__main">
@@ -328,7 +256,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card transition-animation _anim-text">
                 <div class="card-content">
                   <div class="card-content__header"><h3>Большой</h3></div>
                   <div class="card-content__main">
@@ -343,7 +271,7 @@
                   </div>
                 </div>
               </div>
-              <div class="card">
+              <div class="card transition-animation _anim-text">
                 <div class="card-content">
                   <div class="card-content__header"><h3>Премиум</h3></div>
                   <div class="card-content__main">
@@ -363,7 +291,7 @@
           </div>
         </div>
         <!-- ПОРТФОЛИО -->
-        <div class="portfolio">
+        <div class="page__portfolio" id="portfolio">
           <div class="portfolio__container">
             <div class="portfolio-header">
               <h2>Портфолио в процессе создания :)</h2>
@@ -397,7 +325,7 @@
           </div>
         </div>
         <!-- ОТЗЫВЫ -->
-        <div class="feedback" id="feedback">
+        <div class="page__feedback" id="feedback">
           <div class="feedback__header">
             <div class="feedback__header__p">
               <p class="feedback__header__p1"></p>
@@ -426,7 +354,11 @@
                 </div>
                 <div>
                   <p>
-                    Редко бывает такое когда человек понимает тебя с пол слова. Томас отлично выполнил свою работу! Быстро, профессионально и корректно! Часто созванивались, на все вопросы давал исчерпывающие ответы. Порадовало полностью прозрачное сотрудничество. Рекомендую всем!
+                    Редко бывает такое когда человек понимает тебя с пол слова.
+                    Томас отлично выполнил свою работу! Быстро, профессионально
+                    и корректно! Часто созванивались, на все вопросы давал
+                    исчерпывающие ответы. Порадовало полностью прозрачное
+                    сотрудничество. Рекомендую всем!
                   </p>
                 </div>
                 <div class="fb-text">
@@ -657,10 +589,8 @@
       </main>
 
       <!-- ПОДВАЛ -->
-      <footer class="page__footer">
-        <div class="page__footer-header">
-
-        </div>
+      <footer class="page__footer" id="contact">
+        <div class="page__footer-header"></div>
         <div class="page__footer-main" id="contact">
           <ul class="list">
             <li class="list-icon">
@@ -765,7 +695,6 @@
           <p class="footer__p_1">© 2021 Цифровой ремесленник</p>
           <p class="footer__p_2">Все права защищены.</p>
         </div>
-
       </footer>
     </div>
 
