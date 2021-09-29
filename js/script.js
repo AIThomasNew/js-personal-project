@@ -1,5 +1,5 @@
 // import * as THREE from 'three';
-import * as THREE from '../build/three.module.js';
+import * as THREE from '../js/build/three.module.js';
 import * as dat from './dat.gui.module.js';
 // import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
