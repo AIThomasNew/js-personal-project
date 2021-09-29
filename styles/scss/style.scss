@@ -37,14 +37,12 @@ body {
 }
 
 //? ОБЁРТКА ------------------------------------------------------------------//
-
 .wrapper {
   display: grid;
   grid-template-rows: 100%;
 }
 
 //? ТЕХНИЧЕСКИЕ КЛАССЫ -------------------------------------------------------//
-
 // ._ibg {
 //   position: relative;
 // }
@@ -59,28 +57,14 @@ body {
 
 //? СТРАНИЦА -----------------------------------------------------------------//
 .page {
-  padding-top: 60px;
+  padding-top: 78px;
   overflow: hidden;
   min-height: auto;
   background-color: white;
-  height: 100%;
+  // height: 100%;
   width: 100%;
+  overflow: hidden;
 }
-.page__sphere {
-  position: relative;
-}
-// .page__questions {
-//   position: relative;
-//   max-width: 100%;
-//   max-height: 800px;
-// }
-// .page__services {
-//   position: relative;
-// }
-// .page__skills {
-//   position: relative;
-//   max-height: 800px;
-// }
 
 //? ШАПКА -------------------------------------------------------------------//
 .header {
@@ -182,13 +166,15 @@ body {
   display: block;
 }
 
-//? 3D АНИМАЦИЯ -----------------------------------------------------------//
+//? МАГИЯ -----------------------------------------------------------//
 .page__sphere {
-  height: 800px;
+  height: 755px;
   margin: 0;
-  display: grid;
-  place-items: center;
-  background: radial-gradient(#292929, #10151b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // background: radial-gradient(#292929, #10151b);
+  background-color: #10151b;
   overflow: hidden;
 }
 .webgl {
@@ -199,7 +185,8 @@ body {
   mix-blend-mode: exclusion;
 }
 .sphere__h1 {
-  font-size: 4rem;
+  // padding: 40px 0px 0px 0px;
+  font-size: 3rem;
   text-transform: uppercase;
   color: rgb(180, 179, 179);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -211,28 +198,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  // background: radial-gradient(#292929, #10151b);
   background-color: #10151b;
   box-sizing: border-box;
-  height: 500px;
+  height: 800px;
   width: 100%;
 }
 .about__info {
   display: flex;
   align-items: center;
-  width: 650px;
+  // width: 650px;
+  width: 800px;
+  overflow: hidden;
+
 }
 .photo-box {
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  margin: 0px 10px 0px 20px;
   border: 1px solid black;
   .my-photo {
-    width: 200px;
+    width: 300px;
   }
 }
 .text-box {
-  width: 420px;
-  margin: 0px 0px 0px 20px;
+  height: 250px;
+  width: 100%;
+  margin: 0px 20px 0px 10px;
 }
 .text-box h2 {
   color: #0673e6;
@@ -987,12 +980,6 @@ li {
 #submit-order:hover {
   background-color: #067eff;
   transition: 0.3s;
-}
-// .inputBox__input ._req {
-
-// }
-.inputBox__input ._error {
-  box-shadow: 0 0 15 red;
 }
 
 //? ПЛАВНОЕ ПОЯВЛЕНИЕ -------------------------------------------------------//

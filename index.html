@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Разработка сайта под ключ, разработка сайта, разработка сайтов, создание сайта, разработка лендинга, Лендинг, Многостраничный сайт, разработка фирменного стиля, разработка дизайна, разработка многостраничного сайта"
+    />
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
     </style>
@@ -11,26 +15,52 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="icon" href="./img/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="manifest"
+      href="./img/favicon/site.webmanifest"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" type="text/css" href="./styles/css/style.css" />
     <title>Цифровой ремесленник</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper" id="wrapper">
       <!-- ШАПКА -->
       <header class="header">
         <div class="header-container">
           <div class="header__logo">
-            <a href="./index.html" id="btn-logo">Цифровой ремесленник</a>
+            <a href="http://ithomas.ru/" id="btn-logo">Цифровой ремесленник</a>
           </div>
           <div class="header__menu">
             <div class="menu__nav">
-              <a class="nav__nav-links" href="#about">ОБО МНЕ</a>
+              <a class="nav__nav-links" href="#wrapper">ГЛАВНАЯ</a>
               <a class="nav__nav-links" href="#prices">УСЛУГИ</a>
               <a class="nav__nav-links" href="#portfolio">ПОРТФОЛИО</a>
               <a class="nav__nav-links" href="#feedback">ОТЗЫВЫ</a>
               <a class="nav__nav-links" href="#contact">КОНТАКТЫ</a>
             </div>
-            <div class="menu__btn">
+            <!-- <div class="menu__btn">
               <a href="#" class="btn__btn-order">
                 <span></span>
                 <span></span>
@@ -38,7 +68,7 @@
                 <span></span>
                 ЗАКАЗАТЬ
               </a>
-            </div>
+            </div> -->
           </div>
         </div>
       </header>
@@ -46,11 +76,13 @@
       <main class="page">
         <!-- ГЛАВНАЯ -->
         <div class="page__sphere">
-          <div class="sphere__h1"><h1>Сайт - это лицо вашего бизнеса</h1></div>
+          <div class="sphere__h1">
+            <h1>Мечтаете выделиться среди конкурентов?</h1>
+          </div>
           <canvas class="webgl"></canvas>
         </div>
         <!-- ОБО МНЕ -->
-        <div class="page__about" id="about">
+        <div class="page__about">
           <div class="about__info transition-animation _anim-text">
             <div class="info__photo">
               <div class="photo-box">
@@ -61,8 +93,7 @@
               <div class="text-box">
                 <h2>Добро пожаловать!</h2>
                 <p>
-                  Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я
-                  помогаю вашему бизнесу выглядеть лучше !
+                  Готов помочь! Меня зовут Томас Неганов и я Web-Разработчик. Я занимаюсь созданием сайтов, приложений и дизайна с использованием последних технологий! <br> Помогу вашему бизнесу выглядеть лучше!
                 </p>
                 <a href="#gadget" class="btn-order2">
                   <span></span>
@@ -121,8 +152,8 @@
                 <h3>Аналитика</h3>
                 <p>
                   Изучаю ваш бизнес и весь предоставленный мне материал вашей
-                  идеи, а также с рынком конкурентов, для глубокого понимания и
-                  планирования.
+                  идеи, а также знакомлюсь с рынком конкурентов, для глубокого
+                  понимания и планирования.
                 </p>
               </div>
               <div class="main-box transition-animation _anim-text">
@@ -252,7 +283,7 @@
                     </p>
                   </div>
                   <div class="card-content__footer">
-                    <a href="#">от 12 000 рублей</a>
+                    <a href="#contact">от 12 000 рублей</a>
                   </div>
                 </div>
               </div>
@@ -267,7 +298,7 @@
                     </p>
                   </div>
                   <div class="card-content__footer">
-                    <a href="#">от 30 000 рублей</a>
+                    <a href="#contact">от 30 000 рублей</a>
                   </div>
                 </div>
               </div>
@@ -281,7 +312,7 @@
                     </p>
                   </div>
                   <div class="card-content__footer">
-                    <a href="#">от 45 000 рублей</a>
+                    <a href="#contact">от 45 000 рублей</a>
                   </div>
                 </div>
               </div>
@@ -354,11 +385,11 @@
                 </div>
                 <div>
                   <p>
-                    Редко бывает такое когда человек понимает тебя с пол слова.
-                    Томас отлично выполнил свою работу! Быстро, профессионально
-                    и корректно! Часто созванивались, на все вопросы давал
-                    исчерпывающие ответы. Порадовало полностью прозрачное
-                    сотрудничество. Рекомендую всем!
+                    Томас отлично выполнил свою работу! Профессионально, быстро
+                    и корректно! Всегда на связи. Порадовало полностью
+                    прозрачное сотрудничество. Качество работы превзошло все мои
+                    ожидания! Повторно буду обращаться только к тебе!!!
+                    Рекомендую всем!
                   </p>
                 </div>
                 <div class="fb-text">
@@ -587,7 +618,6 @@
           </div>
         </div>
       </main>
-
       <!-- ПОДВАЛ -->
       <footer class="page__footer" id="contact">
         <div class="page__footer-header"></div>
@@ -699,9 +729,13 @@
     </div>
 
     <!-- СКРИПТЫ -->
-    <script type="module" src="./js/index.js"></script>
+    <!-- <script src="./js/lib/three.js"></script> -->
+    <!-- <script type="module" src="./build/three.module.js"></script> -->
+    <!-- <script type="module" src="./js/dat.gui.module.js"></script> -->
+    <!-- <script type="module" src="./js/index.js"></script> -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/lib/VanillaTilt.js"></script>
+    <script type="module" src="./js/script.js"></script>
     <script src="./js/lib/jquery.js"></script>
     <script src="./js/animation/transition-anim.js"></script>
     <script src="./js/animation/observer-anim.js"></script>
