@@ -1,13 +1,11 @@
 // import * as THREE from 'three';
 import * as THREE from '../js/build/three.module.js';
 import * as dat from './dat.gui.module.js';
-// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 // Loading
 const textureLoader = new THREE.TextureLoader();
 
 const normalTexture = textureLoader.load('img/texture/NormalMap7.png');
-// const normalTexture = textureLoader.load('/img/NormalMap7.png');
 
 // Debug
 const gui = new dat.GUI();
